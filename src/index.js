@@ -10,8 +10,9 @@ import reducers from "./reducers";
 import App from "./components/App";
 import history from "./components/history";
 
-// import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+import "../node_modules/@fortawesome/fontawesome-free/js/all.js";
 
 // const store = createStore(reducers, applyMiddleware(thunk));
 

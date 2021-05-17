@@ -3,10 +3,22 @@ import { Route, Switch, Redirect } from "react-router-dom";
 
 import "../Sass/main.scss"
 
+import Home from "./Home/home"
+import NotFound from "./notfound"
+import Totop from "./totop"
+
 const App = () => {
   return (
     <>
-    hello
+      <main>
+        <Switch>
+            <Route path="/notfound" component={NotFound} />
+            <Route path="/home" component={Home} />
+            <Redirect from="/" exact to="/home" />
+            <Redirect to="/notfound" />
+        </Switch>
+      </main>
+    <Totop></Totop>
     </>
   );
 };

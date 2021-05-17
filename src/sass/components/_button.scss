@@ -1,0 +1,25 @@
+.button{
+    &__link{
+        border-radius: 30px;
+        background-color: $colmainbtn;
+        color: $colfontsecondary;
+        padding: 0.3rem 1rem;
+        &:hover{
+            color: $colfontsecondary;
+            background-color: $colmain;
+            cursor: pointer;
+        }
+    }
+
+    &__link2{
+        border-radius: 30px;
+        background-color: $colsecondarybtn;
+        color: $colfontsecondary;
+        padding: 0.3rem 1rem;
+        &:hover{
+            color: $colfontsecondary;
+            background-color: $colsecondary;
+            cursor: pointer;
+        }
+    }
+}

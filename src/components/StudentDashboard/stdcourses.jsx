@@ -5,7 +5,7 @@ const StdCourses = () => {
     <React.Fragment>
       <section className="stdcourses">
         <div className="row  justify-content-md-center">
-          <div className="col-lg-4 stdcourses__coursecard">
+          <div className="col-md-4 col-sm-6 stdcourses__coursecard">
             <div className="stdcourses__coursename">
               Science
               <img
@@ -17,7 +17,7 @@ const StdCourses = () => {
             <div className="stdcourses__courseteacher">Teacher: Malak</div>
           </div>
 
-          <div className="col-lg-4 stdcourses__coursecard">
+          <div className="col-md-4 col-sm-6 stdcourses__coursecard">
             <div className="stdcourses__coursename">
               Science
               <img
@@ -29,7 +29,7 @@ const StdCourses = () => {
             <div className="stdcourses__courseteacher">Teacher: Menna</div>
           </div>
 
-          <div className="col-lg-4 stdcourses__coursecard">
+          <div className="col-md-4 col-sm-6 stdcourses__coursecard">
             <div className="stdcourses__coursename">
               Math
               <img
@@ -41,7 +41,7 @@ const StdCourses = () => {
             <div className="stdcourses__courseteacher">Teacher: Malak</div>
           </div>
 
-          <div className="col-lg-4 stdcourses__coursecard">
+          <div className="col-md-4 col-sm-6 stdcourses__coursecard">
             <div className="stdcourses__coursename">
               English
               <img

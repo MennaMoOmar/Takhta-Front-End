@@ -17,9 +17,7 @@
     color: $colfontmain;
   }
   &__list {
-    // display: flex;
-    // justify-content: flex-end;
-    // width: 100%;
+    margin: 0 auto;
     &__item {
       &__link {
         color: $colfontmain !important;
@@ -33,4 +31,14 @@
       }
     }
   }
+}
+
+
+.navbar-toggler-icon{
+  width: fit-content !important;
+  height: fit-content !important;
+  color: $colmainbtn;
+}
+.navbar-toggler:focus{
+  box-shadow: 0 0 0 0.1rem $colmainbtn !important;
 }

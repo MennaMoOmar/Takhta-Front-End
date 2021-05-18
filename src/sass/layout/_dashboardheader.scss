@@ -2,6 +2,11 @@
     border-radius: 1.5rem;
     padding: 1rem;
     background-image: linear-gradient(to right, $colmainbtn , $colmain);
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     &__header{
         color: $colfontsecondary;
     }

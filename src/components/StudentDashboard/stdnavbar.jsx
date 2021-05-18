@@ -58,7 +58,7 @@ const StdNavBar = () => {
           </ul>
           <a className="navbar-brand" href="/">
             <img className="navBar__image__user" src="/images/user.png" alt="user"></img>
-            <span className="navBar__span">Hi, 7mada</span>
+            <span className="navBar__span">Hi, Menna</span>
           </a>
         </div>
       </nav>

@@ -1,0 +1,27 @@
+.stdcourses {
+  border-radius: 1.5rem;
+  padding: 1rem;
+  margin: 1.5rem 0rem;
+  background-color: $colbgdiv;
+  text-align: center;
+  &__coursecard{
+      margin-bottom: 1.5rem;
+  }
+  &__img {
+    position: relative;
+    bottom: -1.7rem;
+    left: -3.5rem;
+  }
+  &__coursename {
+    background-color: $colmain;
+    border-radius: 20px 20px 0px 0px;
+    padding: 1rem;
+    color: $colfontsecondary;
+  }
+  &__courseteacher {
+    background-color: $colfontsecondary;
+    border-radius: 0px 0px 20px 20px;
+    padding: 1rem;
+    color: $colmain;
+  }
+}

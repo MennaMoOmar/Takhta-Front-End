@@ -6,7 +6,7 @@ const StdHeader = () => {
       <div className="stdheader">
         <div className="row">
           <div className="col-sm-9">
-            <h2 className="stdheader__header">Welcome Back, Ahmed</h2>
+            <h2 className="stdheader__header">Welcome Back, Menna</h2>
             <p className="stdheader__para">Portsaid School</p>
             <button className="button btn">
               <span className="button__link3">View Profile</span>

@@ -11,10 +11,10 @@ const StdDashboard = () => {
         <StdNavBar></StdNavBar>
         <div className="container-fluid dashboard">
           <div className="row dashboard__row">
-            <div className="col-lg-3 dashboard__sidenav">
+            <div className="col-lg-2 dashboard__sidenav">
               <StdSideNav></StdSideNav>
             </div>
-            <div className="col-lg-8 dashboard__content">
+            <div className="col-lg-9 dashboard__content">
               <StdContent></StdContent>
             </div>
           </div>

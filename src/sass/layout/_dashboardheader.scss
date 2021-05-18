@@ -1,0 +1,11 @@
+.stdheader{
+    border-radius: 1.5rem;
+    padding: 1rem;
+    background-image: linear-gradient(to right, $colmainbtn , $colmain);
+    &__header{
+        color: $colfontsecondary;
+    }
+    &__para{
+        color: $colfontsecondary;
+    }
+}

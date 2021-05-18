@@ -1,0 +1,19 @@
+.sidenav {
+  &__list {
+    padding-left: 0rem;
+    &__item {
+      list-style: none;
+      margin-bottom: 1.5rem;
+      padding: 0.5rem 0rem;
+      &:hover {
+        color: $colmain;
+        cursor: pointer;
+      }
+      &__icon {
+        margin-right: 0.5rem;
+      }
+      //   &__span {
+      //   }
+    }
+  }
+}

@@ -1,25 +1,37 @@
-.button{
-    &__link{
-        border-radius: 30px;
-        background-color: $colmainbtn;
-        color: $colfontsecondary;
-        padding: 0.3rem 1rem;
-        &:hover{
-            color: $colfontsecondary;
-            background-color: $colmain;
-            cursor: pointer;
-        }
+.button {
+  &__link {
+    border-radius: 30px;
+    background-color: $colmainbtn;
+    color: $colfontsecondary;
+    padding: 0.3rem 1rem;
+    &:hover {
+      color: $colfontsecondary;
+      background-color: $colmain;
+      cursor: pointer;
     }
+  }
 
-    &__link2{
-        border-radius: 30px;
-        background-color: $colsecondarybtn;
-        color: $colfontsecondary;
-        padding: 0.3rem 1rem;
-        &:hover{
-            color: $colfontsecondary;
-            background-color: $colsecondary;
-            cursor: pointer;
-        }
+  &__link2 {
+    border-radius: 30px;
+    background-color: $colsecondarybtn;
+    color: $colfontsecondary;
+    padding: 0.3rem 1rem;
+    &:hover {
+      color: $colfontsecondary;
+      background-color: $colsecondary;
+      cursor: pointer;
     }
+  }
+
+  &__link3 {
+    border-radius: 30px;
+    color: $colmain;
+    background-color: $colfontsecondary;
+    padding: 0.3rem 1rem;
+    &:hover {
+      color: $colmain;
+      background-color: $colfontsecondary;
+      cursor: pointer;
+    }
+  }
 }

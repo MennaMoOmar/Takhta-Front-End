@@ -1,10 +1,11 @@
 import React from "react";
 
+import StdHeader from'./stdheader';
 
 const StdContent = () => {
   return (
     <React.Fragment>
-      cont
+      <StdHeader></StdHeader>
     </React.Fragment>
   );
 };

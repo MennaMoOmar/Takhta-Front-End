@@ -1,15 +1,15 @@
 .dashboard{
     &__row{
-        justify-content: space-evenly
+        justify-content: space-evenly;
+        padding-top: 1rem;
     }
     &__sidenav{
-        background-color: $colbgdiv;
+        background-color: $colfontsecondary;
         border-radius: 1.5rem;
         min-height: 85vh;
+        padding: 2rem 0rem;
     }
     &__content{
-        background-color: blue;
-        border-radius: 1.5rem;
         min-height: 85vh;
     }
 }

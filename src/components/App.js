@@ -9,8 +9,10 @@ import HeroSection  from "./Home/herosection"
 import Services  from "./Home/services"
 import StdDashboard from "./StudentDashboard/stddashboard"
 import StdDashboardCourses from "./StudentDashboard/stddashboardcourses"
+import StdAssignmentsHeader from "./StudentDashboard/stddashboardassignments"
 import NotFound from "./notfound"
 import Totop from "./totop"
+import StdDashboardAssignments from "./StudentDashboard/stddashboardassignments";
 
 const App = () => {
   return (
@@ -22,6 +24,7 @@ const App = () => {
             <Route path="/services" component={Services} />
             <Route path="/stddashboard" component={StdDashboard} />
             <Route path="/stddashboardcourses" component={StdDashboardCourses} />
+            <Route path="/stddashboardassignments" component={StdDashboardAssignments} />
             <Route path="/notfound" component={NotFound} />
             <Route path="/home" component={Home} />
             <Redirect from="/" exact to="/home" />

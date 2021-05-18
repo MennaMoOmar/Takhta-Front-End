@@ -1,6 +1,6 @@
 import React from "react";
 
-import StdHeader from'./stdheader';
+import StdHeader from "./stdheader";
 
 const StdContent = () => {
   return (

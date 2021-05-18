@@ -5,9 +5,9 @@ const HeroSection = () => {
     <React.Fragment>
       <section className="herosection">
         <div className="container">
-          <div className="sectionOne">
+          <div className="herosection__sectionOne">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-6 herosection__sectionOne__content">
                 <h2>Your School here in one place</h2>
                 <p>Login to start your new day</p>
                 <button className="button btn">
@@ -15,14 +15,16 @@ const HeroSection = () => {
                 </button>
               </div>
               <div className="col-lg-6">
-                {/* <img src="/images/asset1.png" alt="logo"></img> */}
+                <img src="/images/HeroSec3.png" alt="logo" className="herosection__img"></img>
               </div>
             </div>
           </div>
-          <div className="sectionTwo">
+          <div className="herosection__sectionTwo">
             <div className="row">
-              <div className="col-lg-6"></div>
               <div className="col-lg-6">
+              <img src="/images/HeroSec4.png" alt="logo" className="herosection__img"></img>
+              </div>
+              <div className="col-lg-6 herosection__sectionTwo__content">
                 <h2>Parents can track their child school progress</h2>
                 <p>Be one of our parents group</p>
                 <button className="button btn">

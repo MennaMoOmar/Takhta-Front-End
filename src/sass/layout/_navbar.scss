@@ -24,6 +24,9 @@
       &__link {
         color: $colfontmain !important;
         font-family: sans-serif;
+        &:hover{
+          color: $colmain !important;
+        }
         &--active {
           color: $colfontmain;
         }

@@ -1,0 +1,22 @@
+.herosection {
+  padding-top: 5rem;
+  margin-top: -5rem;
+  background-image: url("../images/Vector1.png"), url("../images/Vector2.png");
+  background-position: right top, bottom left;
+  background-repeat: no-repeat;
+  background-size: 500px, 400px 450px;
+  &__img{
+    height: 400px;
+    width: 100%;
+  }
+  &__sectionOne {
+    &__content {
+      padding-top: 5rem;
+    }
+  }
+  &__sectionTwo{
+    &__content {
+        padding-top: 5rem;
+      }
+  }
+}

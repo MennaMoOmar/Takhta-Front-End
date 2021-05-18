@@ -2,7 +2,8 @@ import React from "react";
 
 import StdNavBar from "./stdnavbar";
 import StdSideNav from "./stdsidenav";
-import StdContent from "./stdcontent";
+import StdHeader from "./stdheader";
+// import StdContent from "./stdcontent";
 
 const StdDashboard = () => {
   return (
@@ -15,7 +16,8 @@ const StdDashboard = () => {
               <StdSideNav></StdSideNav>
             </div>
             <div className="col-lg-9 dashboard__content">
-              <StdContent></StdContent>
+              <StdHeader></StdHeader>
+              {/* <StdContent></StdContent> */}
             </div>
           </div>
         </div>

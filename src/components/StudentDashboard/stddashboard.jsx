@@ -3,6 +3,7 @@ import React from "react";
 import StdNavBar from "./stdnavbar";
 import StdSideNav from "./stdsidenav";
 import StdHeader from "./stdheader";
+import MainCourses from "./maincourses";
 // import StdContent from "./stdcontent";
 
 const StdDashboard = () => {
@@ -17,6 +18,7 @@ const StdDashboard = () => {
             </div>
             <div className="col-lg-9 dashboard__content">
               <StdHeader></StdHeader>
+              <MainCourses></MainCourses>
               {/* <StdContent></StdContent> */}
             </div>
           </div>

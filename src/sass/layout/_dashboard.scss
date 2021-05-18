@@ -1,0 +1,15 @@
+.dashboard{
+    &__row{
+        justify-content: space-evenly
+    }
+    &__sidenav{
+        background-color: $colbgdiv;
+        border-radius: 1.5rem;
+        min-height: 85vh;
+    }
+    &__content{
+        background-color: blue;
+        border-radius: 1.5rem;
+        min-height: 85vh;
+    }
+}

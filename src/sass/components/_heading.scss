@@ -1,0 +1,9 @@
+.heading{
+    display: grid;
+    justify-content: center;
+    margin: 2rem 0rem;
+    h2{
+        padding-bottom: .5rem;
+        border-bottom: 2px solid $colsecondarybtn;
+    }
+}

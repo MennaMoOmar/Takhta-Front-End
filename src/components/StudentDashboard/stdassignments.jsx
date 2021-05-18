@@ -20,7 +20,6 @@ const StdAssignments = () => {
                   <span>assignment3</span>
                   <input type="file" name="assignment" />
                 </div>
-
               </div>
             </div>
           </div>

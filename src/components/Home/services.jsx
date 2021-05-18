@@ -6,7 +6,7 @@ const Services = () => {
       <section className="service">
         <div className="container">
           <div className="heading">
-            <h2>Servises</h2>
+            <h2>Services</h2>
           </div>
           <div className="row  justify-content-md-center">
             <div className="col-lg-3 cardservice">

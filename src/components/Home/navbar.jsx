@@ -1,7 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useHistory } from "react-router";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  /* history */
+  const history = useHistory();
+
+  const login = () => {
+      history.push("/login");
+  };
+
   return (
     <React.Fragment>
       <nav className="navBar navbar navbar-expand-lg">
@@ -64,7 +72,7 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-          <button className="button btn">
+          <button className="button btn" onClick={login}>
             <span className="button__link">Login</span>
           </button>
         </div>

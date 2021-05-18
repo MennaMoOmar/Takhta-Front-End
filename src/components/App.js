@@ -5,6 +5,8 @@ import "../Sass/main.scss"
 
 import Home from "./Home/home"
 import Login  from "./login"
+import HeroSection  from "./Home/herosection"
+import Services  from "./Home/services"
 import StdDashboard from "./StudentDashboard/stddashboard"
 import NotFound from "./notfound"
 import Totop from "./totop"
@@ -15,6 +17,8 @@ const App = () => {
       <main>
         <Switch>
             <Route path="/login" component={Login} />
+            <Route path="/herosection" component={HeroSection} />
+            <Route path="/services" component={Services} />
             <Route path="/stddashboard" component={StdDashboard} />
             <Route path="/notfound" component={NotFound} />
             <Route path="/home" component={Home} />

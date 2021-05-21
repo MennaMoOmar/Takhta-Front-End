@@ -1,0 +1,15 @@
+.notification{
+    color: $colmain;
+    background-color: transparent;
+    font-size: 1rem;
+    padding:0;
+    &:not(:last-child){
+        margin: 0rem .5rem;
+    }
+    &__span{
+        position: relative;
+        left: -.6rem;
+        top: -0.8rem;
+        color: $colfontmain;
+    }
+}

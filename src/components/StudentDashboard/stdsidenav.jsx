@@ -23,7 +23,7 @@ const StdSideNav = () => {
           onClick={handleNavCollapse}
         >
           <span className="navbar-toggler-icon">
-            <i className="fas fa-bars"></i>
+          <i className="fas fa-ellipsis-v"></i>
           </span>
         </button>
         <div className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}>

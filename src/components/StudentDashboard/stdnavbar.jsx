@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import Search from "./search";
-
-import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
+import Search from "../search";
+import Notification from "../notification";
 
 /*start ddl*/
 import Button from "@material-ui/core/Button";
@@ -98,7 +97,7 @@ const StdNavBar = () => {
             <div className="stdnavBar__list navbar-nav">
               <div className={classes.root}></div>
               <Search></Search>
-              <NotificationsActiveIcon></NotificationsActiveIcon>
+              <Notification></Notification>
               <div>
                 <Button
                   ref={anchorRef}

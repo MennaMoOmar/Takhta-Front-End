@@ -9,10 +9,9 @@ import HeroSection  from "./Home/herosection"
 import Services  from "./Home/services"
 import StdDashboard from "./StudentDashboard/stddashboard"
 import StdDashboardCourses from "./StudentDashboard/stddashboardcourses"
-import StdAssignmentsHeader from "./StudentDashboard/stddashboardassignments"
 import NotFound from "./notfound"
 import Totop from "./totop"
-import StdDashboardAssignments from "./StudentDashboard/stddashboardassignments";
+import StdDashboardAssignments from "./StudentDashboard/assignments/stddashboardassignments";
 
 const App = () => {
   return (

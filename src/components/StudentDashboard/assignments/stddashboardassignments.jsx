@@ -1,7 +1,7 @@
 import React from "react";
 
-import StdNavBar from "./stdnavbar";
-import StdSideNav from "./stdsidenav";
+import StdNavBar from "../stdnavbar";
+import StdSideNav from "../stdsidenav";
 import StdAssignmentsHeader from "./stdassignmentsheader";
 import StdAssignments from "./stdassignments";
 

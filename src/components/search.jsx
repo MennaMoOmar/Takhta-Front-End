@@ -4,7 +4,7 @@ const Search = () => {
   return (
     <React.Fragment>
       <div className="search">
-        <input type="text" className="search__input"></input>
+        <input type="text" className="search__input" placeholder="search..."></input>
       </div>
     </React.Fragment>
   );

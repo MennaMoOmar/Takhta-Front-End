@@ -8,6 +8,12 @@ const StdSideNav = () => {
       <div className="container sidenav">
         <ul className="sidenav__list">
           <li className="sidenav__list__item">
+            <i className="fas fa-binoculars sidenav__list__item__icon"></i>
+            <NavLink className="sidenav__list__item__a" to="/stddashboard">
+              Overview
+            </NavLink>
+          </li>
+          <li className="sidenav__list__item">
             <i className="fas fa-book sidenav__list__item__icon"></i>
             <NavLink
               className="sidenav__list__item__a"

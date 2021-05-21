@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+import Search from "./search";
+
 /*start ddl*/
 import Button from "@material-ui/core/Button";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
@@ -21,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
 /*end ddl*/
 
 const StdNavBar = () => {
-
   /*start collapse navbar*/
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
@@ -89,54 +90,12 @@ const StdNavBar = () => {
             </span>
           </button>
 
-          <div
+          {/* <div
             className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
-          >
-            {/* <ul className="navBar__list navbar-nav">
-              <li className="navBar__list__item nav-item">
-                <NavLink
-                  className="navBar__list__item__link navBar__list__item__link--active nav-link"
-                  aria-current="page"
-                  to="/home"
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li className="navBar__list__item nav-item">
-                <NavLink
-                  className="navBar__list__item__link nav-link"
-                  to="/subject"
-                >
-                  Subject
-                </NavLink>
-              </li>
-              <li className="navBar__list__item nav-item">
-                <NavLink
-                  className="navBar__list__item__link nav-link"
-                  to="/schedule"
-                >
-                  Schedule
-                </NavLink>
-              </li>
-              <li className="navBar__list__item nav-item">
-                <NavLink
-                  className="navBar__list__item__link nav-link"
-                  to="/profile"
-                >
-                  Profile
-                </NavLink>
-              </li>
-            </ul>
-            <a className="navbar-brand" href="/">
-              <img
-                className="navBar__image__user"
-                src="/images/user.png"
-                alt="user"
-              ></img>
-              <span className="navBar__span">Hi, Menna</span>
-            </a> */}
-
-            <div className={classes.root}>
+          > */}
+            <div className="navBar__list navbar-nav">
+              <div className={classes.root}></div>
+              <Search></Search>
               <div>
                 <Button
                   ref={anchorRef}
@@ -187,7 +146,7 @@ const StdNavBar = () => {
               </div>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </nav>
     </React.Fragment>
   );

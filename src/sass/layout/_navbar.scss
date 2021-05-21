@@ -42,3 +42,6 @@
 .navbar-toggler:focus{
   box-shadow: 0 0 0 0.1rem $colmainbtn !important;
 }
+.navbar-collapse{
+  justify-content: flex-end;
+}

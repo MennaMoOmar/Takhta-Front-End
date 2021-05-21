@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 
 import Search from "./search";
 
+import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
+
 /*start ddl*/
 import Button from "@material-ui/core/Button";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
@@ -65,7 +67,7 @@ const StdNavBar = () => {
 
   return (
     <React.Fragment>
-      <nav className="navBar navbar navbar-expand-lg">
+      <nav className="stdnavBar navbar navbar-expand-lg">
         <div className="container">
           <a className="navbar-brand" href="/">
             <img
@@ -73,7 +75,7 @@ const StdNavBar = () => {
               src="/images/logo.png"
               alt="logo"
             ></img>
-            <span className="navBar__span">Takhta</span>
+            <span className="stdnavBar__span">Takhta</span>
           </a>
           <button
             className="custom-toggler navbar-toggler"
@@ -90,26 +92,27 @@ const StdNavBar = () => {
             </span>
           </button>
 
-          {/* <div
+          <div
             className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
-          > */}
-            <div className="navBar__list navbar-nav">
+          >
+            <div className="stdnavBar__list navbar-nav">
               <div className={classes.root}></div>
               <Search></Search>
+              <NotificationsActiveIcon></NotificationsActiveIcon>
               <div>
                 <Button
                   ref={anchorRef}
                   aria-controls={open ? "menu-list-grow" : undefined}
                   aria-haspopup="true"
                   onClick={handleToggle}
-                  className="navbar-brand"
+                  className="stdnavbar-brand"
                 >
                   <img
                     className="navBar__image__user"
                     src="/images/user.png"
                     alt="user"
                   ></img>
-                  <span className="navBar__span">Hi, Menna</span>
+                  <span className="stdnavBar__span">Hi, Menna</span>
                 </Button>
                 <Popper
                   open={open}
@@ -146,7 +149,7 @@ const StdNavBar = () => {
               </div>
             </div>
           </div>
-        {/* </div> */}
+        </div>
       </nav>
     </React.Fragment>
   );

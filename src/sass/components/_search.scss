@@ -1,0 +1,8 @@
+.search{
+    &__input{
+        border-radius: 20px;
+        border: 1px solid $colmainbtn;
+        outline: none;
+        text-indent: .5rem;
+    }
+}

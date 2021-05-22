@@ -24,11 +24,11 @@ const StdDashboard = () => {
                 <MainCourses></MainCourses>
               </div>
               <div className="row dashboard__row">
-                <div className="col-md-5" className="dashboard__exams">
+                <div className="col-md-5 dashboard__exams">
                   <h4>Exams</h4>
                   <p>No Exams Untill Now <InsertEmoticonIcon></InsertEmoticonIcon></p>
                 </div>
-                <div className="col-md-5" className="dashboard__assignments">
+                <div className="col-md-5 dashboard__assignments">
                   <h4>Assignments</h4>
                   <TodoAssignment></TodoAssignment>
                 </div>

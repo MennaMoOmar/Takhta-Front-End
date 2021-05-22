@@ -49,7 +49,7 @@ const StdSideNav = () => {
               <i className="fas fa-chalkboard-teacher sidenav__list__item__icon"></i>
                 <NavLink
                   className="sidenav__list__item__a"
-                  to="/stddashboardlectures"
+                  to="/stddashboardlectures/{crsid}"
                 >
                   Lectures
                 </NavLink>
@@ -75,12 +75,12 @@ const StdSideNav = () => {
                 {/* <span className="sidenav__list__item__span">Grades</span> */}
               </li>
               <li className="sidenav__list__item">
-                <i className="far fa-newspaper sidenav__list__item__icon"></i>
+              <i className="fas fa-tasks sidenav__list__item__icon"></i>
                 <NavLink
                   className="sidenav__list__item__a"
                   to="/stddashboardassignments"
                 >
-                  Assignments
+                  Assignment
                 </NavLink>
                 {/* <span className="sidenav__list__item__span">Assignments</span> */}
               </li>

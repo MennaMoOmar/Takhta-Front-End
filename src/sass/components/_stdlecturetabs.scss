@@ -1,0 +1,33 @@
+.lecturetabs {
+  &__ul {
+    border-bottom-color: $colmainbtn !important;
+  }
+  &__li {
+    &--is-active {
+      background-color: $colmainbtn;
+      border-radius: 5px 5px 0px 0px;
+      span {
+        color: $colfontsecondary;
+      }
+    }
+  }
+  &__link {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__spanicon {
+    color: $colmainbtn;
+  }
+  &__span {
+    color: $colmainbtn;
+  }
+  &.tabs.is-boxed a:hover {
+    background-color: $colmainbtn;
+    border-bottom-color: $colmainbtn;
+    color: $colfontsecondary;
+    span {
+      color: $colfontsecondary;
+    }
+  }
+}

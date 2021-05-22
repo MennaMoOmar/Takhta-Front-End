@@ -2,6 +2,8 @@ import React from "react";
 
 import StdNavBar from "../stdnavbar";
 import StdSideNav from "../stdsidenav";
+import StdLectureHeader from "./stdlectureheader";
+import StdLectureTabs from "./stdlecturetabs";
 
 const StdDashboardLectures = () => {
   return (
@@ -13,8 +15,11 @@ const StdDashboardLectures = () => {
             <div className="col-lg-2 dashboard__sidenav">
               <StdSideNav></StdSideNav>
             </div>
-            <div className="col-lg-9 dashboard__content">
-              kjkj
+            <div className="col-lg-9">
+              <StdLectureHeader></StdLectureHeader>
+              <div className="dashboardcontent">
+                <StdLectureTabs></StdLectureTabs>
+              </div>
             </div>
           </div>
         </div>

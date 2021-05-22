@@ -2,6 +2,7 @@ import React from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
+import { NavLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,7 +32,7 @@ const Login = () => {
           {/* add error prop if in valid */}
             <TextField id="standard-basic" label="Email" />
             <TextField id="standard-basic" label="Password" />
-            <a className="login__box__a">Forget Your Password?</a>
+            <NavLink className="login__box__a" to="">Forget Your Password?</NavLink>
             <button className="button btn login__box__btn">
               <span className="button__link">Sign in</span>
             </button>

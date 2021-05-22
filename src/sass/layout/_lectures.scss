@@ -1,0 +1,13 @@
+.lectures {
+  background-color: $colbgdiv;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  &__title {
+    color: $colmain;
+    font-weight: bold;
+  }
+  &_data{
+      color: $colmain;
+  }
+}

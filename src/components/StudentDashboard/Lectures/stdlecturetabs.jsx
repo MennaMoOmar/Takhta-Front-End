@@ -7,7 +7,7 @@ const StdLectureTabs = () => {
       <div className="lecturetabs tabs is-centered is-boxed">
         <ul className="lecturetabs__ul">
           <li className="lecturetabs__li lecturetabs__li--is-active">
-            <NavLink className="lecturetabs__link" to="">
+            <NavLink className="lecturetabs__link" to={`/stddashboardlectures/${1}/lectures`}>
               <span className="lecturetabs__spanicon icon is-small">
                 <i className="lecturetabs__icon fas fa-chalkboard-teacher"></i>
               </span>
@@ -15,7 +15,7 @@ const StdLectureTabs = () => {
             </NavLink>
           </li>
           <li className="lecturetabs__li">
-            <NavLink className="lecturetabs__link" to="">
+            <NavLink className="lecturetabs__link" to={`/stddashboardlectures/${1}/files`}>
               <span className="lecturetabs__spanicon icon is-small">
                 <i className="lecturetabs__icon far fa-file-alt"></i>
               </span>
@@ -23,7 +23,7 @@ const StdLectureTabs = () => {
             </NavLink>
           </li>
           <li className="lecturetabs__li">
-            <NavLink className="lecturetabs__link" to="">
+            <NavLink className="lecturetabs__link" to={`/stddashboardlectures/${1}/assignments`}>
               <span className="lecturetabs__spanicon icon is-small">
                 <i className="lecturetabs__icon fas fa-tasks"></i>
               </span>
@@ -31,7 +31,7 @@ const StdLectureTabs = () => {
             </NavLink>
           </li>
           <li className="lecturetabs__li">
-            <NavLink className="lecturetabs__link" to="">
+            <NavLink className="lecturetabs__link" to={`/stddashboardlectures/${1}/recording`}>
               <span className="lecturetabs__spanicon icon is-small">
                 <i className="lecturetabs__icon fas fa-film" aria-hidden="true"></i>
               </span>

@@ -4,8 +4,9 @@ import StdNavBar from "../stdnavbar";
 import StdSideNav from "../stdsidenav";
 import StdLectureHeader from "./stdlectureheader";
 import StdLectureTabs from "./stdlecturetabs";
+import Lectures from "./lectutres";
 
-const StdDashboardLectures = () => {
+const StdLecturesTab = () => {
   return (
     <React.Fragment>
       <div style={{ backgroundColor: "#F6FCFB" }}>
@@ -19,7 +20,8 @@ const StdDashboardLectures = () => {
               <StdLectureHeader></StdLectureHeader>
               <div className="dashboardcontent">
                 <StdLectureTabs></StdLectureTabs>
-                
+                <Lectures></Lectures>
+                <Lectures></Lectures>
               </div>
             </div>
           </div>
@@ -29,4 +31,4 @@ const StdDashboardLectures = () => {
   );
 };
 
-export default StdDashboardLectures;
+export default StdLecturesTab;

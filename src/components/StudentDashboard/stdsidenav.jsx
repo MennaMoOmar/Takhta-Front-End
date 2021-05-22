@@ -49,7 +49,7 @@ const StdSideNav = () => {
               <i className="fas fa-chalkboard-teacher sidenav__list__item__icon"></i>
                 <NavLink
                   className="sidenav__list__item__a"
-                  to="/stddashboardlectures/{crsid}"
+                  to={`/stddashboardlectures/${1}`}
                 >
                   Lectures
                 </NavLink>

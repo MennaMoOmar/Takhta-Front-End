@@ -13,6 +13,7 @@ import Totop from "./totop"
 import StdDashboardCourses from "./StudentDashboard/Courses/stddashboardcourses"
 import StdDashboardAssignments from "./StudentDashboard/assignments/stddashboardassignments";
 import StdDashboardLectures from "./StudentDashboard/Lectures/stddashboardlectures";
+import StdLecturesTab from "./StudentDashboard/Lectures/stdlecturestab";
 
 const App = () => {
   return (
@@ -25,10 +26,12 @@ const App = () => {
             <Route path="/stddashboard" component={StdDashboard} />
             <Route path="/stddashboardcourses" component={StdDashboardCourses} />
             <Route path="/stddashboardassignments" component={StdDashboardAssignments} />
-            <Route path="/stddashboardlectures/:id" component={StdDashboardLectures} />
+            <Route path="/stddashboardlectures/:id/lectures" component={StdLecturesTab} />
             <Route path="/notfound" component={NotFound} />
             <Route path="/home" component={Home} />
             <Redirect from="/" exact to="/home" />
+            <Route path="/stddashboardlectures/:id" component={StdDashboardLectures} />
+            <Redirect from="/stddashboardlectures/:id" exact to="/stddashboardlectures/:id" />
             <Redirect to="/notfound" />
         </Switch>
       </main>

@@ -14,6 +14,7 @@ import StdDashboardCourses from "./StudentDashboard/Courses/stddashboardcourses"
 import StdDashboardAssignments from "./StudentDashboard/assignments/stddashboardassignments";
 import StdDashboardLectures from "./StudentDashboard/Lectures/stddashboardlectures";
 import StdLecturesTab from "./StudentDashboard/Lectures/stdlecturestab";
+import StdRecordingTab from "./StudentDashboard/Lectures/stdrecordingtab";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/stddashboardcourses" component={StdDashboardCourses} />
             <Route path="/stddashboardassignments" component={StdDashboardAssignments} />
             <Route path="/stddashboardlectures/:id/lectures" component={StdLecturesTab} />
+            <Route path="/stddashboardlectures/:id/recording" component={StdRecordingTab} />
             <Route path="/notfound" component={NotFound} />
             <Route path="/home" component={Home} />
             <Redirect from="/" exact to="/home" />

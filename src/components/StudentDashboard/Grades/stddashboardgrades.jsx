@@ -3,6 +3,7 @@ import React from "react";
 import StdNavBar from "../stdnavbar";
 import StdSideNav from "../stdsidenav";
 import StdGradesHeader from "./stdgradesheader";
+import StdGrades from "./stdgrades";
 
 const StdDashboardGrades = () => {
   return (
@@ -16,6 +17,7 @@ const StdDashboardGrades = () => {
             </div>
             <div className="col-lg-9 dashboard__content">
               <StdGradesHeader></StdGradesHeader>
+              <StdGrades></StdGrades>
             </div>
           </div>
         </div>

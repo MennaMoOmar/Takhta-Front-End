@@ -10,8 +10,11 @@ const StdCoursesHeader = () => {
             <p className="stdheader__para">Browse your school subjects</p>
           </div>
           <div className="col-sm-3">
-          <img className="stdheader__image" src="/images/courses.png" alt="logo"></img>
-
+            <img
+              className="stdheader__image"
+              src="/images/courses.png"
+              alt="logo"
+            ></img>
           </div>
         </div>
       </div>

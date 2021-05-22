@@ -3,7 +3,7 @@ import React from "react";
 import StdNavBar from "./stdnavbar";
 import StdSideNav from "./stdsidenav";
 import StdHeader from "./stdheader";
-import MainCourses from "./maincourses";
+import MainCourses from "./Courses/maincourses";
 import TodoAssignment from "./assignments/todoassign";
 
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';

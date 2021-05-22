@@ -8,7 +8,7 @@ import Login  from "./login"
 import HeroSection  from "./Home/herosection"
 import Services  from "./Home/services"
 import StdDashboard from "./StudentDashboard/stddashboard"
-import StdDashboardCourses from "./StudentDashboard/stddashboardcourses"
+import StdDashboardCourses from "./StudentDashboard/Courses/stddashboardcourses"
 import NotFound from "./notfound"
 import Totop from "./totop"
 import StdDashboardAssignments from "./StudentDashboard/assignments/stddashboardassignments";

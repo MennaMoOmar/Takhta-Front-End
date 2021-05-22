@@ -46,6 +46,15 @@ const StdSideNav = () => {
                 {/* <span className="sidenav__list__item__span">Courses</span> */}
               </li>
               <li className="sidenav__list__item">
+              <i className="fas fa-chalkboard-teacher sidenav__list__item__icon"></i>
+                <NavLink
+                  className="sidenav__list__item__a"
+                  to="/stddashboardlectures"
+                >
+                  Lectures
+                </NavLink>
+              </li>
+              <li className="sidenav__list__item">
                 <i className="far fa-calendar-alt sidenav__list__item__icon"></i>
                 <NavLink
                   className="sidenav__list__item__a"

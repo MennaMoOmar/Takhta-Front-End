@@ -1,11 +1,9 @@
 import React from "react";
 
-import StdNavBar from "./stdnavbar";
-import StdSideNav from "./stdsidenav";
-import StdCoursesHeader from "./stdcoursesheader";
-import StdCourses from "./stdcourses";
+import StdNavBar from "../stdnavbar";
+import StdSideNav from "../stdsidenav";
 
-const StdDashboardCourses = () => {
+const StdDashboardLectures = () => {
   return (
     <React.Fragment>
       <div style={{ backgroundColor: "#F6FCFB" }}>
@@ -16,8 +14,7 @@ const StdDashboardCourses = () => {
               <StdSideNav></StdSideNav>
             </div>
             <div className="col-lg-9 dashboard__content">
-              <StdCoursesHeader></StdCoursesHeader>
-              <StdCourses></StdCourses>
+              kjkj
             </div>
           </div>
         </div>
@@ -26,4 +23,4 @@ const StdDashboardCourses = () => {
   );
 };
 
-export default StdDashboardCourses;
+export default StdDashboardLectures;

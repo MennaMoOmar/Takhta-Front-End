@@ -1,15 +1,29 @@
-.dashboard{
-    &__row{
-        justify-content: space-evenly;
-        padding-top: 1rem;
+.dashboard {
+  &__row {
+    justify-content: space-evenly;
+    padding-top: 1rem;
+  }
+  &__sidenav {
+    background-color: $colfontsecondary;
+    border-radius: 1.5rem;
+    // min-height: 85vh;
+    padding: 2rem 0rem;
+  }
+  &__exams {
+    background-color: $colbgdiv;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0rem;
+    p {
+      text-align: center;
+      color: $colmainbtn;
+      padding: 2rem 0rem;
     }
-    &__sidenav{
-        background-color: $colfontsecondary;
-        border-radius: 1.5rem;
-        // min-height: 85vh;
-        padding: 2rem 0rem;
-    }
-    &__content{
-        min-height: 85vh;
-    }
+  }
+  &__assignments {
+    background-color: $colbgdiv;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0rem;
+  }
 }

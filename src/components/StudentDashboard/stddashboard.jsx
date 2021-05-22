@@ -4,7 +4,9 @@ import StdNavBar from "./stdnavbar";
 import StdSideNav from "./stdsidenav";
 import StdHeader from "./stdheader";
 import MainCourses from "./maincourses";
-// import StdContent from "./stdcontent";
+import TodoAssignment from "./assignments/todoassign";
+
+import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 
 const StdDashboard = () => {
   return (
@@ -18,8 +20,19 @@ const StdDashboard = () => {
             </div>
             <div className="col-lg-9 dashboard__content">
               <StdHeader></StdHeader>
-              <MainCourses></MainCourses>
-              {/* <StdContent></StdContent> */}
+              <div className="dashboard__lectures">
+                <MainCourses></MainCourses>
+              </div>
+              <div className="row dashboard__row">
+                <div className="col-md-5" className="dashboard__exams">
+                  <h4>Exams</h4>
+                  <p>No Exams Untill Now <InsertEmoticonIcon></InsertEmoticonIcon></p>
+                </div>
+                <div className="col-md-5" className="dashboard__assignments">
+                  <h4>Assignments</h4>
+                  <TodoAssignment></TodoAssignment>
+                </div>
+              </div>
             </div>
           </div>
         </div>

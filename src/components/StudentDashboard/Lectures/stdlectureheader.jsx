@@ -10,7 +10,7 @@ const StdLectureHeader = () => {
             <p className="stdheader__para">Mr.Hamada</p>
           </div>
           <div className="col-sm-3">
-          <img className="stdheader__image" src="/images/courses.png" alt="logo"></img>
+          <img className="stdheader__image" src="/images/lectures.png" alt="logo"></img>
 
           </div>
         </div>

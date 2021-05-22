@@ -23,66 +23,71 @@ const StdSideNav = () => {
           onClick={handleNavCollapse}
         >
           <span className="navbar-toggler-icon">
-          <i className="fas fa-ellipsis-v"></i>
+            <i className="fas fa-ellipsis-v"></i>
           </span>
         </button>
         <div className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}>
           <div className="container sidenav">
             <ul className="sidenav__list">
               <li className="sidenav__list__item">
-                <i className="fas fa-binoculars sidenav__list__item__icon"></i>
-                <NavLink className="sidenav__list__item__a" to="/stddashboard">
+                <NavLink
+                  className="sidenav__list__item__a"
+                  activeClassName="sidenav--is-active"
+                  to="/stddashboard"
+                >
+                  <i className="fas fa-binoculars sidenav__list__item__icon"></i>
                   Overview
                 </NavLink>
               </li>
               <li className="sidenav__list__item">
-                <i className="fas fa-book sidenav__list__item__icon"></i>
                 <NavLink
                   className="sidenav__list__item__a"
+                  activeClassName="sidenav--is-active"
                   to="/stddashboardcourses"
                 >
+                  <i className="fas fa-book sidenav__list__item__icon"></i>
                   Courses
                 </NavLink>
-                {/* <span className="sidenav__list__item__span">Courses</span> */}
               </li>
               <li className="sidenav__list__item">
-              <i className="fas fa-chalkboard-teacher sidenav__list__item__icon"></i>
                 <NavLink
                   className="sidenav__list__item__a"
+                  activeClassName="sidenav--is-active"
                   to={`/stddashboardlectures/${1}`}
                 >
+                  <i className="fas fa-chalkboard-teacher sidenav__list__item__icon"></i>
                   Lectures
                 </NavLink>
               </li>
               <li className="sidenav__list__item">
-                <i className="far fa-calendar-alt sidenav__list__item__icon"></i>
                 <NavLink
                   className="sidenav__list__item__a"
+                  activeClassName="sidenav--is-active"
                   to="/stddashboardschedule"
                 >
+                  <i className="far fa-calendar-alt sidenav__list__item__icon"></i>
                   Schedule
                 </NavLink>
-                {/* <span className="sidenav__list__item__span">Schedule</span> */}
               </li>
               <li className="sidenav__list__item">
-                <i className="fas fa-percent sidenav__list__item__icon"></i>
                 <NavLink
                   className="sidenav__list__item__a"
+                  activeClassName="sidenav--is-active"
                   to="/stddashboardgrades"
                 >
+                  <i className="fas fa-percent sidenav__list__item__icon"></i>
                   Grade
                 </NavLink>
-                {/* <span className="sidenav__list__item__span">Grades</span> */}
               </li>
               <li className="sidenav__list__item">
-              <i className="fas fa-tasks sidenav__list__item__icon"></i>
                 <NavLink
                   className="sidenav__list__item__a"
+                  activeClassName="sidenav--is-active"
                   to="/stddashboardassignments"
                 >
+                  <i className="fas fa-tasks sidenav__list__item__icon"></i>
                   Assignment
                 </NavLink>
-                {/* <span className="sidenav__list__item__span">Assignments</span> */}
               </li>
             </ul>
           </div>

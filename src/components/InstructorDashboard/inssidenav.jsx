@@ -69,7 +69,7 @@ const InsSideNav = () => {
                   Schedule
                 </NavLink>
               </li>
-              <li className="sidenav__list__item">
+              {/* <li className="sidenav__list__item">
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
@@ -78,7 +78,7 @@ const InsSideNav = () => {
                   <i className="fas fa-percent sidenav__list__item__icon"></i>
                   Grade
                 </NavLink>
-              </li>
+              </li> */}
               <li className="sidenav__list__item">
                 <NavLink
                   className="sidenav__list__item__a"

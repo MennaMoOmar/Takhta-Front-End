@@ -8,7 +8,7 @@ import Assignments from "../../StudentDashboard/Lectures/assignments";
 import CreateAssignments from "../../InstructorDashboard/Lectures/createassignment";
 
 const StdAssignmentsTab = () => {
-  const logginas = "ins";
+  const logginas = "std";
 
   return (
     <React.Fragment>

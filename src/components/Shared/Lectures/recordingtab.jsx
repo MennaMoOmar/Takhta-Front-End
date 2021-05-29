@@ -9,7 +9,7 @@ import CreateRecord from "../../InstructorDashboard/Lectures/createrecord";
 
 
 const StdRecordingTab = () => {
-  const logginas = "ins";
+  const logginas = "std";
 
   return (
     <React.Fragment>

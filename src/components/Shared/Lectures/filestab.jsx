@@ -8,7 +8,7 @@ import Files from "../../StudentDashboard/Lectures/files";
 import CreateFiles from "../../InstructorDashboard/Lectures/createfile";
 
 const StdFilesTab = () => {
-  const logginas = "ins";
+  const logginas = "std";
 
   return (
     <React.Fragment>

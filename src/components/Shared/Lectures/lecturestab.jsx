@@ -8,7 +8,7 @@ import Lectures from "../../StudentDashboard/Lectures/lectutres";
 import CreateLectures from "../../InstructorDashboard/Lectures/createlecture";
 
 const StdLecturesTab = () => {
-  const logginas = "ins";
+  const logginas = "std";
 
   return (
     <React.Fragment>

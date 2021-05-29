@@ -1,10 +1,10 @@
 import React from "react";
 
 import StdNavBar from "../stdnavbar";
-import StdSideNav from "../stdsidenav";
-import StdLectureHeader from "./stdlectureheader";
-import StdLectureTabs from "./stdlecturetabs";
-import Recording from "./recording";
+import StdSideNav from "../../StudentDashboard/stdsidenav";
+import StdLectureHeader from "./lectureheader";
+import StdLectureTabs from "./lecturetabs";
+import Recording from "../../StudentDashboard/Lectures/recording";
 
 const StdRecordingTab = () => {
   return (

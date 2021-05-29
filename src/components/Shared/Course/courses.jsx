@@ -6,7 +6,7 @@ const StdCourses = () => {
   const history = useHistory();
 
   const handleChooseCourse = (id) => {
-    history.push(`/stddashboardlectures/${id}`);
+    history.push(`/dashboardlectures/${id}`);
   };
 
   return (

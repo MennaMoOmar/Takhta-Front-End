@@ -1,6 +1,6 @@
 import React from "react";
 
-import StdNavBar from "../stdnavbar";
+import StdNavBar from "../../Shared/stdnavbar";
 import StdSideNav from "../stdsidenav";
 import StdGradesHeader from "./stdgradesheader";
 import StdGrades from "./stdgrades";

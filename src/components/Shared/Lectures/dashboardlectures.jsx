@@ -1,12 +1,14 @@
 import React from "react";
 
 import StdNavBar from "../stdnavbar";
-import StdSideNav from "../stdsidenav";
-import StdLectureHeader from "./stdlectureheader";
-import StdLectureTabs from "./stdlecturetabs";
-import Assignments from "./assignments";
+import StdSideNav from "../../StudentDashboard/stdsidenav";
+import InsSideNav from "../../InstructorDashboard/inssidenav";
+import StdLectureHeader from "./lectureheader";
+import StdLectureTabs from "./lecturetabs";
 
-const StdAssignmentsTab = () => {
+const StdDashboardLectures = () => {
+  const logginas = "std";
+  
   return (
     <React.Fragment>
       <div style={{ backgroundColor: "#F6FCFB" }}>
@@ -14,13 +16,14 @@ const StdAssignmentsTab = () => {
         <div className="container-fluid dashboard">
           <div className="row dashboard__row">
             <div className="col-lg-2 dashboard__sidenav">
-              <StdSideNav></StdSideNav>
+            {logginas === "std" && <StdSideNav></StdSideNav>}
+            {logginas === "ins" && <InsSideNav></InsSideNav>}
             </div>
             <div className="col-lg-9">
               <StdLectureHeader></StdLectureHeader>
               <div className="dashboardcontent">
                 <StdLectureTabs></StdLectureTabs>
-                <Assignments></Assignments>
+                
               </div>
             </div>
           </div>
@@ -30,4 +33,4 @@ const StdAssignmentsTab = () => {
   );
 };
 
-export default StdAssignmentsTab;
+export default StdDashboardLectures;

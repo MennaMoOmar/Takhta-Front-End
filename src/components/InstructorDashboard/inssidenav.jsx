@@ -33,7 +33,7 @@ const InsSideNav = () => {
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
-                  to="/stddashboard"
+                  to="/insdashboard"
                 >
                   <i className="fas fa-binoculars sidenav__list__item__icon"></i>
                   Overview
@@ -43,7 +43,7 @@ const InsSideNav = () => {
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
-                  to="/stddashboardcourses"
+                  to="/dashboardcourses"
                 >
                   <i className="fas fa-book sidenav__list__item__icon"></i>
                   Courses
@@ -53,7 +53,7 @@ const InsSideNav = () => {
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
-                  to={`/stddashboardlectures/${1}`}
+                  to={`/dashboardlectures/${1}`}
                 >
                   <i className="fas fa-chalkboard-teacher sidenav__list__item__icon"></i>
                   Lectures
@@ -63,7 +63,7 @@ const InsSideNav = () => {
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
-                  to="/stddashboardschedule"
+                  to="/aa"
                 >
                   <i className="far fa-calendar-alt sidenav__list__item__icon"></i>
                   Schedule
@@ -73,7 +73,7 @@ const InsSideNav = () => {
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
-                  to="/stddashboardgrades"
+                  to="/aa"
                 >
                   <i className="fas fa-percent sidenav__list__item__icon"></i>
                   Grade
@@ -83,7 +83,7 @@ const InsSideNav = () => {
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
-                  to="/stddashboardassignments"
+                  to="/aa"
                 >
                   <i className="fas fa-tasks sidenav__list__item__icon"></i>
                   Assignment

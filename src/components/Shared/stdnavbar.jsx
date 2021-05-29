@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // import { NavLink } from "react-router-dom";
 
-import Search from "../search";
-import Notification from "../notification";
+import Search from "./search";
+import Notification from "./notification";
 
 /*start ddl*/
 import Button from "@material-ui/core/Button";

@@ -43,7 +43,7 @@ const StdSideNav = () => {
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
-                  to="/stddashboardcourses"
+                  to="/dashboardcourses"
                 >
                   <i className="fas fa-book sidenav__list__item__icon"></i>
                   Courses
@@ -53,7 +53,7 @@ const StdSideNav = () => {
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
-                  to={`/stddashboardlectures/${1}`}
+                  to={`/dashboardlectures/${1}`}
                 >
                   <i className="fas fa-chalkboard-teacher sidenav__list__item__icon"></i>
                   Lectures

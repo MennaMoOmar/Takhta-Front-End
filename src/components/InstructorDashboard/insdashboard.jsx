@@ -1,6 +1,6 @@
 import React from "react";
 
-import StdNavBar from "../StudentDashboard/stdnavbar";
+import StdNavBar from "../Shared/stdnavbar";
 import InsSideNav from "./inssidenav";
 import StdHeader from "../StudentDashboard/stdheader";
 

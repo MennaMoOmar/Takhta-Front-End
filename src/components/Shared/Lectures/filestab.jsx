@@ -1,11 +1,12 @@
 import React from "react";
 
 import StdNavBar from "../stdnavbar";
-import StdSideNav from "../stdsidenav";
-import StdLectureHeader from "./stdlectureheader";
-import StdLectureTabs from "./stdlecturetabs";
+import StdSideNav from "../../StudentDashboard/stdsidenav";
+import StdLectureHeader from "./lectureheader";
+import StdLectureTabs from "./lecturetabs";
+import Files from "../../StudentDashboard/Lectures/files";
 
-const StdDashboardLectures = () => {
+const StdFilesTab = () => {
   return (
     <React.Fragment>
       <div style={{ backgroundColor: "#F6FCFB" }}>
@@ -19,7 +20,7 @@ const StdDashboardLectures = () => {
               <StdLectureHeader></StdLectureHeader>
               <div className="dashboardcontent">
                 <StdLectureTabs></StdLectureTabs>
-                
+                <Files></Files>
               </div>
             </div>
           </div>
@@ -29,4 +30,4 @@ const StdDashboardLectures = () => {
   );
 };
 
-export default StdDashboardLectures;
+export default StdFilesTab;

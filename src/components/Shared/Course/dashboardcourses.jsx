@@ -1,11 +1,14 @@
 import React from "react";
 
 import StdNavBar from "../stdnavbar";
-import StdSideNav from "../stdsidenav";
-import StdCoursesHeader from "./stdcoursesheader";
-import StdCourses from "./stdcourses";
+import StdSideNav from "../../StudentDashboard/stdsidenav";
+import InsSideNav from "../../InstructorDashboard/inssidenav";
+import CoursesHeader from "./coursesheader";
+import Courses from "./courses";
 
 const StdDashboardCourses = () => {
+  const logginas = "std";
+
   return (
     <React.Fragment>
       <div style={{ backgroundColor: "#F6FCFB" }}>
@@ -13,11 +16,12 @@ const StdDashboardCourses = () => {
         <div className="container-fluid dashboard">
           <div className="row dashboard__row">
             <div className="col-lg-2 dashboard__sidenav">
-              <StdSideNav></StdSideNav>
+              {logginas === "std" && <StdSideNav></StdSideNav>}
+              {logginas === "ins" && <InsSideNav></InsSideNav>}
             </div>
             <div className="col-lg-9 dashboard__content">
-              <StdCoursesHeader></StdCoursesHeader>
-              <StdCourses></StdCourses>
+              <CoursesHeader></CoursesHeader>
+              <Courses></Courses>
             </div>
           </div>
         </div>

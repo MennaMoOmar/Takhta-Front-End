@@ -5,8 +5,12 @@ import StdSideNav from "../../StudentDashboard/stdsidenav";
 import StdLectureHeader from "./lectureheader";
 import StdLectureTabs from "./lecturetabs";
 import Recording from "../../StudentDashboard/Lectures/recording";
+import CreateRecord from "../../InstructorDashboard/Lectures/createrecord";
+
 
 const StdRecordingTab = () => {
+  const logginas = "ins";
+
   return (
     <React.Fragment>
       <div style={{ backgroundColor: "#F6FCFB" }}>
@@ -22,6 +26,7 @@ const StdRecordingTab = () => {
                 <StdLectureTabs></StdLectureTabs>
                 <Recording></Recording>
                 <Recording></Recording>
+                {logginas === "ins" && <CreateRecord></CreateRecord>}
               </div>
             </div>
           </div>

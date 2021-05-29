@@ -14,15 +14,19 @@ const CreateAssignmentForm = () => {
             />
           </div>
           <div className="lectures__div">
-            <span className="lectures__title">Assignmenst Link: </span>
+            <span className="lectures__title">Link: </span>
             <input
               type="text"
               placeholder="enter drive link"
               className="lectures__input"
             />
           </div>
-          <button className='button  lectures__addbtn'>Add</button>
-          <button className='button lectures__cancelbtn'>Cancel</button>
+          <div className="lectures__div">
+            <span className="lectures__title">Description: </span>
+            <textarea className="lectures__input" placeholder="enter brief for assignment" cols="25" rows="2"></textarea>
+          </div>
+          <button className="button  lectures__addbtn">Add</button>
+          <button className="button lectures__cancelbtn">Cancel</button>
         </form>
       </div>
     </React.Fragment>

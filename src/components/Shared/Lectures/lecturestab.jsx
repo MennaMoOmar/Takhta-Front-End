@@ -5,8 +5,11 @@ import StdSideNav from "../../StudentDashboard/stdsidenav";
 import StdLectureHeader from "./lectureheader";
 import StdLectureTabs from "./lecturetabs";
 import Lectures from "../../StudentDashboard/Lectures/lectutres";
+import CreateLectures from "../../InstructorDashboard/Lectures/createlecture";
 
 const StdLecturesTab = () => {
+  const logginas = "ins";
+
   return (
     <React.Fragment>
       <div style={{ backgroundColor: "#F6FCFB" }}>
@@ -21,7 +24,7 @@ const StdLecturesTab = () => {
               <div className="dashboardcontent">
                 <StdLectureTabs></StdLectureTabs>
                 <Lectures></Lectures>
-                <Lectures></Lectures>
+                {logginas === "ins" && <CreateLectures></CreateLectures>}
               </div>
             </div>
           </div>

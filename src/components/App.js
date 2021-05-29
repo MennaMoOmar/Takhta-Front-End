@@ -11,6 +11,7 @@ import Services  from "./Home/services"
 import StdDashboard from "./StudentDashboard/stddashboard"
 import NotFound from "./notfound"
 import Totop from "./totop"
+
 // student
 import StdDashboardAssignments from "./StudentDashboard/assignments/stddashboardassignments";
 import StdLecturesTab from "./Shared/Lectures/lecturestab";
@@ -19,6 +20,7 @@ import StdAssignmentsTab from "./Shared/Lectures/assignmentstab";
 import StdFilesTab from "./Shared/Lectures/filestab";
 import StdDashboardGrades from "./StudentDashboard/Grades/stddashboardgrades";
 import StdDashboardSchedule from "./StudentDashboard/Schedule/stddashboardschedule";
+
 // instructor
 import InsDashboard from "./InstructorDashboard/insdashboard";
 
@@ -39,10 +41,10 @@ const App = () => {
             <Route path="/stddashboardassignments" component={StdDashboardAssignments} />
             <Route path="/stddashboardgrades" component={StdDashboardGrades} />
             <Route path="/stddashboardschedule" component={StdDashboardSchedule} />
-            <Route path="/stddashboardlectures/:id/lectures" component={StdLecturesTab} />
-            <Route path="/stddashboardlectures/:id/recording" component={StdRecordingTab} />
-            <Route path="/stddashboardlectures/:id/assignments" component={StdAssignmentsTab} />
-            <Route path="/stddashboardlectures/:id/files" component={StdFilesTab} />
+            <Route path="/dashboardlectures/:id/lectures" component={StdLecturesTab} />
+            <Route path="/dashboardlectures/:id/recording" component={StdRecordingTab} />
+            <Route path="/dashboardlectures/:id/assignments" component={StdAssignmentsTab} />
+            <Route path="/dashboardlectures/:id/files" component={StdFilesTab} />
 
             {/* instructot */}
             <Route path="/insdashboard" component={InsDashboard} />

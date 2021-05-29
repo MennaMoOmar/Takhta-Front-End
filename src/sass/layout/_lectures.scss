@@ -6,8 +6,46 @@
   &__title {
     color: $colmain;
     font-weight: bold;
+    min-width: 100px;
+    display: inline-block;
   }
-  &_data{
-      color: $colmain;
+  &_data {
+    color: $colmain;
+  }
+  &__add {
+    background-color: $colmainbtn !important;
+    color: $colfontsecondary !important;
+  }
+  &__div {
+    margin-bottom: 1rem;
+  }
+  &__input {
+    border-radius: 5px;
+    border: 1px solid $colmainbtn;
+    outline: none;
+    text-indent: 0.5rem;
+  }
+  // &__addbtn,&__cancelbtn{
+  // }
+  &__addbtn {
+    background-color: $colmainbtn;
+    color: $colfontsecondary;
+    margin-right: 0.5rem;
+    border-radius: 20px;
+    min-width: 70px;
+    &:hover {
+      background-color: $colmain;
+      color: $colfontsecondary;
+    }
+  }
+  &__cancelbtn {
+    background-color: $colsecondarybtn;
+    color: $colfontsecondary;
+    border-radius: 20px;
+    min-width: 70px;
+    &:hover {
+      background-color: $colsecondary;
+      color: $colfontsecondary;
+    }
   }
 }

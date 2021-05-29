@@ -1,43 +1,79 @@
 .stdassignments {
-    border-radius: 1.5rem;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  margin: 1.5rem 0rem;
+  background-color: $colbgdiv;
+  text-align: center;
+  &__card {
+    margin-bottom: 1.5rem;
+  }
+  &__title {
+    background-color: $colmain;
+    border-radius: 20px 20px 0px 0px;
     padding: 1rem;
-    margin: 1.5rem 0rem;
-    background-color: $colbgdiv;
-    text-align: center;
-    &__card{
-        margin-bottom: 1.5rem;
+    color: $colfontsecondary;
+    &--todo {
+      background-color: $colsecondarybtn;
     }
-    &__title {
-      background-color: $colmain;
-      border-radius: 20px 20px 0px 0px;
-      padding: 1rem;
-      color: $colfontsecondary;
-      &--todo{
-          background-color: $colsecondary;
-      }
-    }
-    &__content {
-      background-color: $colfontsecondary;
-      border-radius: 0px 0px 20px 20px;
-      padding: 1rem;
-      color: $colfontmain;
-      &__assign{
-          background-color: $colbgdiv;
-          box-sizing: border-box;
-          padding: .5rem;
-          margin-bottom: 1rem;
-          border-radius: 10px;
-      }
-      span{
-          display: inline-block;
-          width: 50%;
-          text-align: left;
-      }
-      input{
-        display: inline-block;
-        width: 50%;
-        text-align: right;
-      }
+    &--pending {
+      background-color: $colsecondary;
     }
   }
-  
+  &__input {
+    border-radius: 4px;
+    border: 1px solid $colbg;
+    outline: none;
+    text-indent: 0.5rem;
+  }
+  &__submit {
+    height: 35px;
+    background-color: $colsecondarybtn;
+    color: $colfontsecondary;
+    margin-top: 1rem;
+    border-radius: 20px;
+    &:hover {
+      background-color: $colsecondary;
+      color: $colfontsecondary;
+    }
+    &__icon{
+      margin-right: .5rem;
+    }
+  }
+  &__edit {
+    height: 35px;
+    background-color: $colsecondary;
+    color: $colfontsecondary;
+    margin-top: 1rem;
+    border-radius: 20px;
+    &:hover {
+      background-color: $colsecondarybtn;
+      color: $colfontsecondary;
+    }
+    &__icon{
+      margin-right: .5rem;
+    }
+  }
+  &__content {
+    background-color: $colfontsecondary;
+    border-radius: 0px 0px 20px 20px;
+    padding: 1rem;
+    color: $colfontmain;
+    &__assign {
+      background-color: $colbgdiv;
+      box-sizing: border-box;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+    }
+    span {
+      display: inline-block;
+      width: 50%;
+      text-align: left;
+    }
+    input {
+      display: inline-block;
+      width: 50%;
+      // text-align: right;
+    }
+  }
+}

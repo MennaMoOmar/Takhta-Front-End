@@ -10,12 +10,16 @@ const TodoAssignment = () => {
         <div className="stdassignments__content">
           <div className="stdassignments__content__assign">
             <span>assignment2</span>
-            <input type="file" name="assignment" />
+            <input type="text" className="stdassignments__input" placeholder="add link here"/>
+            <button className="button stdassignments__submit"><i className="fas fa-check stdassignments__submit__icon"></i> Submit</button>
+            {/* <input type="file" name="assignment" /> */}
           </div>
 
           <div className="stdassignments__content__assign">
             <span>assignment3</span>
-            <input type="file" name="assignment" />
+            <input type="text" className="stdassignments__input" placeholder="add link here"/>
+            <button className="button stdassignments__submit"><i className="fas fa-check stdassignments__submit__icon"></i> Submit</button>
+            {/* <input type="file" name="assignment" /> */}
           </div>
         </div>
       </div>

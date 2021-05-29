@@ -38,7 +38,7 @@ const App = () => {
             <Route path="/services" component={Services} />
             {/* student */}
             <Route path="/stddashboard" component={StdDashboard} />
-            <Route path="/stddashboardassignments" component={StdDashboardAssignments} />
+            {/* <Route path="/stddashboardassignments" component={StdDashboardAssignments} /> */}
             <Route path="/stddashboardgrades" component={StdDashboardGrades} />
             <Route path="/stddashboardschedule" component={StdDashboardSchedule} />
             <Route path="/dashboardlectures/:id/lectures" component={StdLecturesTab} />
@@ -58,6 +58,8 @@ const App = () => {
             <Redirect from="/" exact to="/home" />
             <Route path="/dashboardlectures/:id" component={DashboardLectures} />
             <Redirect from="/stddashboardlectures/:id" exact to="/stddashboardlectures/:id" />
+            <Route path="/stddashboardassignments/:id" component={StdDashboardAssignments} />
+            <Redirect from="/stddashboardassignments/:id" exact to="/stddashboardassignments/:id" />
             <Redirect to="/notfound" />
         </Switch>
       </main>

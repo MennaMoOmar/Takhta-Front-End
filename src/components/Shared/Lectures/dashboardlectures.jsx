@@ -7,7 +7,7 @@ import StdLectureHeader from "./lectureheader";
 import StdLectureTabs from "./lecturetabs";
 
 const StdDashboardLectures = () => {
-  const logginas = "std";
+  const logginas = "ins";
   
   return (
     <React.Fragment>

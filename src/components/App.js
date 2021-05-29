@@ -23,6 +23,8 @@ import StdDashboardSchedule from "./StudentDashboard/Schedule/stddashboardschedu
 
 // instructor
 import InsDashboard from "./InstructorDashboard/insdashboard";
+import InsDashboardAssignments from "./InstructorDashboard/assignments/insdashboardassignments";
+
 
 // st-ins
 import DashboardCourses from "./Shared/Course/dashboardcourses"
@@ -60,6 +62,8 @@ const App = () => {
             <Redirect from="/stddashboardlectures/:id" exact to="/stddashboardlectures/:id" />
             <Route path="/stddashboardassignments/:id" component={StdDashboardAssignments} />
             <Redirect from="/stddashboardassignments/:id" exact to="/stddashboardassignments/:id" />
+            <Route path="/insdashboardassignments/:id" component={InsDashboardAssignments} />
+            <Redirect from="/insdashboardassignments/:id" exact to="/insdashboardassignments/:id" />
             <Redirect to="/notfound" />
         </Switch>
       </main>

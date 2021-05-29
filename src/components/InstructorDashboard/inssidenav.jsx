@@ -69,24 +69,24 @@ const InsSideNav = () => {
                   Schedule
                 </NavLink>
               </li>
-              {/* <li className="sidenav__list__item">
+              <li className="sidenav__list__item">
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
-                  to="/aa"
+                  to={`/insdashboardassignments/${1}`}
                 >
-                  <i className="fas fa-percent sidenav__list__item__icon"></i>
-                  Grade
+                  <i className="fas fa-tasks sidenav__list__item__icon"></i>
+                  Assignment
                 </NavLink>
-              </li> */}
+              </li>
               <li className="sidenav__list__item">
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
                   to="/aa"
                 >
-                  <i className="fas fa-tasks sidenav__list__item__icon"></i>
-                  Assignment
+                  <i className="fas fa-users sidenav__list__item__icon"></i>
+                  Students
                 </NavLink>
               </li>
             </ul>

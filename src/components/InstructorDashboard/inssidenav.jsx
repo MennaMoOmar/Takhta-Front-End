@@ -83,7 +83,7 @@ const InsSideNav = () => {
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
-                  to="/aa"
+                  to={`/insdashboardstudents/${1}`}
                 >
                   <i className="fas fa-users sidenav__list__item__icon"></i>
                   Students

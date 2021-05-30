@@ -28,6 +28,7 @@ import InsDashboardAssignments from "./InstructorDashboard/assignments/insdashbo
 import InsAssignmentPending from "./InstructorDashboard/assignments/insassignmentpending";
 import InsAssignmentAccepted from "./InstructorDashboard/assignments/insassignmentaccepted";
 import InsAssignmentRejected from "./InstructorDashboard/assignments/insassignmentrejected";
+import InsdashDoardStudents from "./InstructorDashboard/Students/insdashboardstudents";
 
 
 // st-ins
@@ -74,6 +75,8 @@ const App = () => {
             <Redirect from="/insdashboardassignments/:id" exact to="/insdashboardassignments/:id" />
             <Route path="/insdashboardassignmentslist/:id" component={InsDashboardAssignmentsList} />
             <Redirect from="/insdashboardassignmentslist/:id" exact to="/insdashboardassignmentslist/:id" />
+            <Route path="/insdashboardstudents/:id" component={InsdashDoardStudents} />
+            <Redirect from="/insdashboardstudents/:id" exact to="/insdashboardstudents/:id" />
             <Redirect to="/notfound" />
         </Switch>
       </main>

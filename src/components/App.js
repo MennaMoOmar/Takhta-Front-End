@@ -23,6 +23,7 @@ import StdDashboardSchedule from "./StudentDashboard/Schedule/stddashboardschedu
 
 // instructor
 import InsDashboard from "./InstructorDashboard/insdashboard";
+import InsDashboardAssignmentsList from "./InstructorDashboard/assignments/insdashboardassignmentslist";
 import InsDashboardAssignments from "./InstructorDashboard/assignments/insdashboardassignments";
 import InsAssignmentPending from "./InstructorDashboard/assignments/insassignmentpending";
 import InsAssignmentAccepted from "./InstructorDashboard/assignments/insassignmentaccepted";
@@ -71,6 +72,8 @@ const App = () => {
             <Redirect from="/stddashboardassignments/:id" exact to="/stddashboardassignments/:id" />
             <Route path="/insdashboardassignments/:id" component={InsDashboardAssignments} />
             <Redirect from="/insdashboardassignments/:id" exact to="/insdashboardassignments/:id" />
+            <Route path="/insdashboardassignmentslist/:id" component={InsDashboardAssignmentsList} />
+            <Redirect from="/insdashboardassignmentslist/:id" exact to="/insdashboardassignmentslist/:id" />
             <Redirect to="/notfound" />
         </Switch>
       </main>

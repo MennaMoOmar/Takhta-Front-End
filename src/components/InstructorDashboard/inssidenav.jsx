@@ -73,7 +73,7 @@ const InsSideNav = () => {
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
-                  to={`/insdashboardassignments/${1}`}
+                  to={`/insdashboardassignmentslist/${1}`}
                 >
                   <i className="fas fa-tasks sidenav__list__item__icon"></i>
                   Assignment

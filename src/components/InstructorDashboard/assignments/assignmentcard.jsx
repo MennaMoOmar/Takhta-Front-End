@@ -1,12 +1,12 @@
 import React from "react";
 import { useHistory } from "react-router";
 
-const Courses = () => {
+const AssignmentCard = () => {
   /* history */
   const history = useHistory();
 
   const handleChooseCourse = (id) => {
-    history.push(`/dashboardlectures/${id}`);
+    history.push(`/insdashboardassignments/${id}`);
   };
 
   return (
@@ -18,14 +18,11 @@ const Courses = () => {
               className="stdcourses__coursename"
               onClick={() => handleChooseCourse(1)}
             >
-              React
-              <img
-                className="navBar__image stdcourses__img"
-                src="/images/science.png"
-                alt="logo"
-              ></img>
+              Task1
             </div>
-            <div className="stdcourses__courseteacher">Teacher: Malak</div>
+            <div className="stdcourses__courseteacher">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </div>
           </div>
         </div>
       </section>
@@ -33,4 +30,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default AssignmentCard;

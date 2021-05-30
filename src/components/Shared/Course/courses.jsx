@@ -8,7 +8,7 @@ const Courses = () => {
   const history = useHistory();
 
   const handleChooseCourse = (id) => {
-    if (logginas == "std") {
+    if (logginas === "std") {
       history.push(`/dashboardlectures/${id}`);
     }
   };

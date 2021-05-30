@@ -16,17 +16,6 @@ const InsDashboard = () => {
             </div>
             <div className="col-lg-9 dashboard__content">
               <StdHeader></StdHeader>
-              <div className="dashboard__lectures">
-                aa
-              </div>
-              <div className="row dashboard__row">
-                <div className="col-md-5 dashboard__exams">
-                  ss
-                </div>
-                <div className="col-md-5 dashboard__assignments">
-                  fd
-                </div>
-              </div>
             </div>
           </div>
         </div>

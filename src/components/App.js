@@ -30,6 +30,9 @@ import InsAssignmentAccepted from "./InstructorDashboard/assignments/insassignme
 import InsAssignmentRejected from "./InstructorDashboard/assignments/insassignmentrejected";
 import InsdashDoardStudents from "./InstructorDashboard/Students/insdashboardstudents";
 
+// parent
+import PrtDashboard from "./ParentDashboard/prtdashboard";
+
 
 // st-ins
 import DashboardCourses from "./Shared/Course/dashboardcourses"
@@ -58,6 +61,9 @@ const App = () => {
             <Route path="/insdashboardassignments/:id/pending" component={InsAssignmentPending} />
             <Route path="/insdashboardassignments/:id/accepted" component={InsAssignmentAccepted} />
             <Route path="/insdashboardassignments/:id/rejected" component={InsAssignmentRejected} />
+
+            {/* parent */}
+            <Route path="/prtdashboard" component={PrtDashboard} />
 
 
             {/* ins-std */}

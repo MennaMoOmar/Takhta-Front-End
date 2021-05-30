@@ -3,11 +3,12 @@ import React from "react";
 import StdNavBar from "../stdnavbar";
 import StdSideNav from "../../StudentDashboard/stdsidenav";
 import InsSideNav from "../../InstructorDashboard/inssidenav";
+import PrtSideNav from "../../ParentDashboard/prtsidenav";
 import CoursesHeader from "./coursesheader";
 import Courses from "./courses";
 
 const StdDashboardCourses = () => {
-  const logginas = "ins";
+  const logginas = "prt";
 
   return (
     <React.Fragment>
@@ -18,6 +19,7 @@ const StdDashboardCourses = () => {
             <div className="col-lg-2 dashboard__sidenav">
               {logginas === "std" && <StdSideNav></StdSideNav>}
               {logginas === "ins" && <InsSideNav></InsSideNav>}
+              {logginas === "prt" && <PrtSideNav></PrtSideNav>}
             </div>
             <div className="col-lg-9 dashboard__content">
               <CoursesHeader></CoursesHeader>

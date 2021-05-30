@@ -1,6 +1,6 @@
 import React from "react";
 
-const Pending = () => {
+const Rejected = () => {
   return (
     <React.Fragment>
       <div className="assigntable">
@@ -33,11 +33,10 @@ const Pending = () => {
                 </a>
               </td>
               <td>
-                <input type="text" className="assigntable__input" />
+                A+
               </td>
-              <td>
-                <i className="fas fa-check assigntable__accept"></i>
-                <i className="fas fa-times assigntable__reject"></i>
+              <td className="assigntable__statusrejected">
+                Rejected
               </td>
             </tr>
 
@@ -48,4 +47,4 @@ const Pending = () => {
   );
 };
 
-export default Pending;
+export default Rejected;

@@ -25,6 +25,8 @@ import StdDashboardSchedule from "./StudentDashboard/Schedule/stddashboardschedu
 import InsDashboard from "./InstructorDashboard/insdashboard";
 import InsDashboardAssignments from "./InstructorDashboard/assignments/insdashboardassignments";
 import InsAssignmentPending from "./InstructorDashboard/assignments/insassignmentpending";
+import InsAssignmentAccepted from "./InstructorDashboard/assignments/insassignmentaccepted";
+import InsAssignmentRejected from "./InstructorDashboard/assignments/insassignmentrejected";
 
 
 // st-ins
@@ -52,6 +54,8 @@ const App = () => {
             {/* instructot */}
             <Route path="/insdashboard" component={InsDashboard} />
             <Route path="/insdashboardassignments/:id/pending" component={InsAssignmentPending} />
+            <Route path="/insdashboardassignments/:id/accepted" component={InsAssignmentAccepted} />
+            <Route path="/insdashboardassignments/:id/rejected" component={InsAssignmentRejected} />
 
 
             {/* ins-std */}

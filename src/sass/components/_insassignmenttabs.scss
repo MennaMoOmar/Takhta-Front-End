@@ -2,6 +2,8 @@
   &__btn {
     border: 1px solid $colmainbtn !important;
     color: $colmainbtn !important;
+    place-self: flex-start !important;
+    padding: 0px !important;
     &:hover {
       background-color: $colmainbtn !important;
       color: $colfontsecondary !important;
@@ -9,11 +11,16 @@
     &__link {
       text-decoration: none;
       color: $colmainbtn;
+      padding: 5px 15px;
       &:hover {
         text-decoration: none;
         color: $colmainbtn;
         color: $colfontsecondary;
       }
     }
+  }
+  &--is-active{
+    background-color: $colmainbtn ;
+      color: $colfontsecondary ;
   }
 }

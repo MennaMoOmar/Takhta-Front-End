@@ -30,6 +30,7 @@ const InsAssignmentsTabs = () => {
             <Button className="insassignmenttabs__btn">
               <NavLink
                 className="insassignmenttabs__btn__link"
+                activeClassName="insassignmenttabs--is-active"
                 to={`/insdashboardassignments/${1}/pending`}
               >
                 Pending
@@ -38,6 +39,7 @@ const InsAssignmentsTabs = () => {
             <Button className="insassignmenttabs__btn">
               <NavLink
                 className="insassignmenttabs__btn__link"
+                activeClassName="insassignmenttabs--is-active"
                 to={`/insdashboardassignments/${1}/accepted`}
               >
                 Accepted
@@ -46,6 +48,7 @@ const InsAssignmentsTabs = () => {
             <Button className="insassignmenttabs__btn">
               <NavLink
                 className="insassignmenttabs__btn__link"
+                activeClassName="insassignmenttabs--is-active"
                 to={`/insdashboardassignments/${1}/rejected`}
               >
                 Rejected

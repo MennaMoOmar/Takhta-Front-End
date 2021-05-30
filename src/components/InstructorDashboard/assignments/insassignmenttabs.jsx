@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
@@ -16,15 +17,42 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const InsAssignmentsTabs = () => {
+  const classes = useStyles();
+
   return (
     <React.Fragment>
-        
-      <div className="insassignmenttabs">
-        <ButtonGroup className="insassignmenttabs__btngroup" aria-label="outlined primary button group">
-          <Button className="insassignmenttabs__btn">Pending</Button>
-          <Button className="insassignmenttabs__btn">Accepted</Button>
-          <Button className="insassignmenttabs__btn">Rejected</Button>
-        </ButtonGroup>
+      <div className="dashboardcontent">
+        <div className={classes.root}>
+          <ButtonGroup
+            className="insassignmenttabs__btngroup"
+            aria-label="outlined primary button group"
+          >
+            <Button className="insassignmenttabs__btn">
+              <NavLink
+                className="insassignmenttabs__btn__link"
+                to={`/insdashboardassignments/${1}/pending`}
+              >
+                Pending
+              </NavLink>
+            </Button>
+            <Button className="insassignmenttabs__btn">
+              <NavLink
+                className="insassignmenttabs__btn__link"
+                to={`/insdashboardassignments/${1}/accepted`}
+              >
+                Accepted
+              </NavLink>
+            </Button>
+            <Button className="insassignmenttabs__btn">
+              <NavLink
+                className="insassignmenttabs__btn__link"
+                to={`/insdashboardassignments/${1}/rejected`}
+              >
+                Rejected
+              </NavLink>
+            </Button>
+          </ButtonGroup>
+        </div>
       </div>
     </React.Fragment>
   );

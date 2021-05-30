@@ -1,0 +1,21 @@
+.assigntable {
+  &__th {
+    color: $colsecondarybtn !important;
+  }
+  &__input {
+    width: 50px;
+
+    outline: none;
+  }
+  &__accept {
+    color: rgb(8, 126, 8);
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  &__reject {
+    color: rgb(206, 22, 22);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

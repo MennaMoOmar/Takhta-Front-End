@@ -1,16 +1,19 @@
-.insassignmenttabs{
-    text-align: center;
-    background-color: $colfontsecondary;
-    border-radius: 20px;
-    box-sizing: border-box;
-    padding: 1rem;
-    margin: 2rem 0rem;
-    &__btn{
-        border: 1px solid $colmainbtn !important;
-        color: $colmainbtn !important;
-        &:hover{
-            background-color: $colmainbtn !important;
-            color: $colfontsecondary !important;
-        }
+.insassignmenttabs {
+  &__btn {
+    border: 1px solid $colmainbtn !important;
+    color: $colmainbtn !important;
+    &:hover {
+      background-color: $colmainbtn !important;
+      color: $colfontsecondary !important;
     }
+    &__link {
+      text-decoration: none;
+      color: $colmainbtn;
+      &:hover {
+        text-decoration: none;
+        color: $colmainbtn;
+        color: $colfontsecondary;
+      }
+    }
+  }
 }

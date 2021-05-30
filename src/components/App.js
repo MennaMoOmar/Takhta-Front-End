@@ -24,6 +24,7 @@ import StdDashboardSchedule from "./StudentDashboard/Schedule/stddashboardschedu
 // instructor
 import InsDashboard from "./InstructorDashboard/insdashboard";
 import InsDashboardAssignments from "./InstructorDashboard/assignments/insdashboardassignments";
+import InsAssignmentPending from "./InstructorDashboard/assignments/insassignmentpending";
 
 
 // st-ins
@@ -50,6 +51,8 @@ const App = () => {
 
             {/* instructot */}
             <Route path="/insdashboard" component={InsDashboard} />
+            <Route path="/insdashboardassignments/:id/pending" component={InsAssignmentPending} />
+
 
             {/* ins-std */}
             <Route path="/dashboardcourses" component={DashboardCourses} />

@@ -2,13 +2,13 @@ import React from "react";
 import { useHistory } from "react-router";
 
 const Courses = () => {
-  const logginas = "prt";
+  const logginas = "std";
 
   /* history */
   const history = useHistory();
 
   const handleChooseCourse = (id) => {
-    if (logginas == "std") {
+    if (logginas === "std") {
       history.push(`/dashboardlectures/${id}`);
     }
   };

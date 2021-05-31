@@ -33,6 +33,9 @@ import InsdashDoardStudents from "./InstructorDashboard/Students/insdashboardstu
 // parent
 import PrtDashboard from "./ParentDashboard/prtdashboard";
 
+//admin school
+import AdminScDashboard from "./AdminSchoolDashboard/adminscdashboard";
+import AdminScDashboardCourses from "./AdminSchoolDashboard/Course/adminscdashboardcourses";
 
 // st-ins
 import DashboardCourses from "./Shared/Course/dashboardcourses"
@@ -46,9 +49,9 @@ const App = () => {
             <Route path="/login" component={Login} />
             <Route path="/herosection" component={HeroSection} />
             <Route path="/services" component={Services} />
+
             {/* student */}
             <Route path="/stddashboard" component={StdDashboard} />
-            {/* <Route path="/stddashboardassignments" component={StdDashboardAssignments} /> */}
             <Route path="/stddashboardgrades" component={StdDashboardGrades} />
             <Route path="/stddashboardschedule" component={StdDashboardSchedule} />
             <Route path="/dashboardlectures/:id/lectures" component={StdLecturesTab} />
@@ -68,6 +71,10 @@ const App = () => {
 
             {/* ins-std */}
             <Route path="/dashboardcourses" component={DashboardCourses} />
+
+            {/* admin school */}
+            <Route path="/adminscdashboard" component={AdminScDashboard} />
+            <Route path="/adminscdashboardcourse" component={AdminScDashboardCourses} />
 
             {/* home */}
             <Route path="/notfound" component={NotFound} />

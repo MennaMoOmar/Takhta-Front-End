@@ -8,7 +8,7 @@ import CoursesHeader from "./coursesheader";
 import Courses from "./courses";
 
 const StdDashboardCourses = () => {
-  const logginas = "prt";
+  const logginas = "std";
 
   return (
     <React.Fragment>

@@ -3,9 +3,9 @@ import React from "react";
 import StdNavBar from "../../Shared/stdnavbar";
 import AdminScSideNav from "../adminscsidenav";
 import AdminScCoursesHeader from "./adminssccourseheader";
+import Grades from "./grades";
 
 const AdminScDashboardCourses = () => {
-
   return (
     <React.Fragment>
       <div style={{ backgroundColor: "#F6FCFB" }}>
@@ -17,6 +17,13 @@ const AdminScDashboardCourses = () => {
             </div>
             <div className="col-lg-9 dashboard__content">
               <AdminScCoursesHeader></AdminScCoursesHeader>
+              <section className="stdcourses">
+                <div className="row  justify-content-md-center">
+                  <Grades></Grades>
+                  <Grades></Grades>
+                  <Grades></Grades>
+                </div>
+              </section>
             </div>
           </div>
         </div>

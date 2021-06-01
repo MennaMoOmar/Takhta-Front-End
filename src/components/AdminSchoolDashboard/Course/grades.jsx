@@ -2,15 +2,12 @@ import React from "react";
 import { useHistory } from "react-router";
 
 const Grades = () => {
-  const logginas = "std";
 
   /* history */
   const history = useHistory();
 
   const handleChooseGrade = (id) => {
-    if (logginas === "std") {
-      history.push(`/adminscdashboardcourses/${id}`);
-    }
+    history.push(`/adminscdashboardcoursesbygrade/${id}`);
   };
 
   return (

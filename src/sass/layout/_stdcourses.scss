@@ -4,8 +4,8 @@
   margin: 1.5rem 0rem;
   background-color: $colbgdiv;
   text-align: center;
-  &__coursecard{
-      margin-bottom: 1.5rem;
+  &__coursecard {
+    margin-bottom: 1.5rem;
   }
   &__img {
     position: relative;
@@ -23,5 +23,17 @@
     border-radius: 0px 0px 20px 20px;
     padding: 1rem;
     color: $colmain;
+  }
+  &__edit {
+    color: $colsecondarybtn;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  &__delete {
+    color: #e80606;
+    font-size: 1.2rem;
+    cursor: pointer;
   }
 }

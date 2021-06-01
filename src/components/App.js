@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 
-import "../sass/main.scss"
+import "../Sass/main.scss"
 
 // home
 import Home from "./Home/home"
@@ -36,6 +36,7 @@ import PrtDashboard from "./ParentDashboard/prtdashboard";
 //admin school
 import AdminScDashboard from "./AdminSchoolDashboard/adminscdashboard";
 import AdminScDashboardCourses from "./AdminSchoolDashboard/Course/adminscdashboardcourses";
+import AdminScDashboardCoursesByGrade from "./AdminSchoolDashboard/Course/adminscdashboardcoursesbygrade";
 
 // st-ins
 import DashboardCourses from "./Shared/Course/dashboardcourses"
@@ -90,6 +91,9 @@ const App = () => {
             <Redirect from="/insdashboardassignmentslist/:id" exact to="/insdashboardassignmentslist/:id" />
             <Route path="/insdashboardstudents/:id" component={InsdashDoardStudents} />
             <Redirect from="/insdashboardstudents/:id" exact to="/insdashboardstudents/:id" />
+            <Route path="/adminscdashboardcoursesbygrade/:id" component={AdminScDashboardCoursesByGrade} />
+            <Redirect from="/adminscdashboardcoursesbygrade/:id" exact to="/adminscdashboardcoursesbygrade/:id" />
+
             <Redirect to="/notfound" />
         </Switch>
       </main>

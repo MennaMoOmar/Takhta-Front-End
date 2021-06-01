@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 
-import "../Sass/main.js"
+import "../Sass/main.scss"
 
 // home
 import Home from "./Home/home"

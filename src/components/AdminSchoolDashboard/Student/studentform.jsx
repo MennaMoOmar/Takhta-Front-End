@@ -82,9 +82,23 @@ const StudentForm = () => {
           </div>
           <div className="form-group">
             <label for="techcourses" className="adminform__label">
+              Grade
+            </label>
+            <select
+              class="form-control"
+              id="techcourses"
+              className="adminform__input"
+            >
+              <option>Grade 1</option>
+              <option>Grade 2</option>
+              <option>Grade 3</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <label for="techcourses" className="adminform__label">
               Courses
             </label>
-            y5tar l courses mn select
+            y5tar l courses mn select 3la 7sb l grade
           </div>
           <button
             className="button  adminform__addbtn"

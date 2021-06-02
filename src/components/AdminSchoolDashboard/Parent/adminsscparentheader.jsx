@@ -1,13 +1,13 @@
 import React from "react";
 
-const AdminScStudentsHeader = () => {
+const AdminScParentsHeader = () => {
   return (
     <React.Fragment>
       <div className="stdheader">
         <div className="row">
           <div className="col-sm-9 stdheader__content">
-            <h2 className="stdheader__header">Students</h2>
-            <p className="stdheader__para">Manage your students</p>
+            <h2 className="stdheader__header">Parents</h2>
+            <p className="stdheader__para">Manage your student's parents</p>
           </div>
           <div className="col-sm-3">
             <img
@@ -22,4 +22,4 @@ const AdminScStudentsHeader = () => {
   );
 };
 
-export default AdminScStudentsHeader;
+export default AdminScParentsHeader;

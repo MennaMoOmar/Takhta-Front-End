@@ -43,6 +43,8 @@ import AdminScDashboardTeachers from "./AdminSchoolDashboard/Teacher/admindashbo
 import AdminScDashboardTeacherCreate from "./AdminSchoolDashboard/Teacher/adminscdashboardteachercreate";
 import AdminScDashboardStudents from "./AdminSchoolDashboard/Student/admindashboardstudents";
 import AdminScDashboardStudentCreate from "./AdminSchoolDashboard/Student/adminscdashboardstudentcreate";
+import AdminScDashboardParents from "./AdminSchoolDashboard/Parent/admindashboardparents";
+import AdminScDashboardParentCreate from "./AdminSchoolDashboard/Parent/adminscdashboardparentcreate";
 
 // st-ins
 import DashboardCourses from "./Shared/Course/dashboardcourses"
@@ -112,6 +114,11 @@ const App = () => {
             <Redirect from="/adminscdashboardstudent/create" exact to="/adminscdashboardteacher/create" />
             <Route path="/adminscdashboardstudent" component={AdminScDashboardStudents} />
             <Redirect from="/adminscdashboardstudent" exact to="/adminscdashboardstudent" />
+
+            <Route path="/adminscdashboardparent/create" component={AdminScDashboardParentCreate} />
+            <Redirect from="/adminscdashboardparent/create" exact to="/adminscdashboardparent/create" />
+            <Route path="/adminscdashboardparent" component={AdminScDashboardParents} />
+            <Redirect from="/adminscdashboardparent" exact to="/adminscdashboardparent" />
 
             <Redirect to="/notfound" />
         </Switch>

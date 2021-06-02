@@ -38,6 +38,7 @@ import PrtDashboard from "./ParentDashboard/prtdashboard";
 import AdminScDashboard from "./AdminSchoolDashboard/adminscdashboard";
 import AdminScDashboardCourses from "./AdminSchoolDashboard/Course/adminscdashboardcourses";
 import AdminScDashboardCoursesByGrade from "./AdminSchoolDashboard/Course/adminscdashboardcoursesbygrade";
+import AdminScDashboardCourseCreate from "./AdminSchoolDashboard/Course/adminscdashboardcoursecreate";
 
 // st-ins
 import DashboardCourses from "./Shared/Course/dashboardcourses"
@@ -76,7 +77,7 @@ const App = () => {
 
             {/* admin school */}
             <Route path="/adminscdashboard" component={AdminScDashboard} />
-            <Route path="/adminscdashboardcourse" component={AdminScDashboardCourses} />
+            {/* <Route path="/adminscdashboardcourse" component={AdminScDashboardCourses} /> */}
 
             {/* home */}
             <Route path="/notfound" component={NotFound} />
@@ -92,8 +93,12 @@ const App = () => {
             <Redirect from="/insdashboardassignmentslist/:id" exact to="/insdashboardassignmentslist/:id" />
             <Route path="/insdashboardstudents/:id" component={InsdashDoardStudents} />
             <Redirect from="/insdashboardstudents/:id" exact to="/insdashboardstudents/:id" />
-            <Route path="/adminscdashboardcoursesbygrade/:id" component={AdminScDashboardCoursesByGrade} />
-            <Redirect from="/adminscdashboardcoursesbygrade/:id" exact to="/adminscdashboardcoursesbygrade/:id" />
+            <Route path="/adminscdashboardcourse/:id/create" component={AdminScDashboardCourseCreate} />
+            <Redirect from="/adminscdashboardcourse/:id/create" exact to="/adminscdashboardcourse/:id/create" />
+            <Route path="/adminscdashboardcourse/:id" component={AdminScDashboardCoursesByGrade} />
+            <Redirect from="/adminscdashboardcourse/:id" exact to="/adminscdashboardcourse/:id" />
+            <Route path="/adminscdashboardcourse" component={AdminScDashboardCourses} />
+            <Redirect from="/adminscdashboardcourse" exact to="/adminscdashboardcourse" />
 
             <Redirect to="/notfound" />
         </Switch>

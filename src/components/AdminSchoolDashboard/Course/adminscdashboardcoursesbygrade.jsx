@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router";
 
 import StdNavBar from "../../Shared/stdnavbar";
 import AdminScSideNav from "../adminscsidenav";
@@ -21,9 +22,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
 const AdminScDashboardCoursesByGrade = () => {
   const classes = useStyles();
+
+  /* history */
+  const history = useHistory();
+  //   addLectureHandler
+  const addCourseHandler = (id) => {
+    history.push(`/adminscdashboardcourse/${id}/create/`);
+  };
 
   return (
     <React.Fragment>
@@ -42,14 +49,15 @@ const AdminScDashboardCoursesByGrade = () => {
                   <Course></Course>
                 </div>
               </section>
-                <div className={classes.root}>
-                  <Fab
-                    className="lectures__add"
-                    aria-label="add"
-                  >
-                    <AddIcon />
-                  </Fab>
-                </div>
+              <div className={classes.root}>
+                <Fab
+                  className="lectures__add"
+                  aria-label="add"
+                  onClick={() => addCourseHandler(1)}
+                >
+                  <AddIcon />
+                </Fab>
+              </div>
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ const Grades = () => {
   const history = useHistory();
 
   const handleChooseGrade = (id) => {
-    history.push(`/adminscdashboardcoursesbygrade/${id}`);
+    history.push(`/adminscdashboardcourse/${id}`);
   };
 
   return (

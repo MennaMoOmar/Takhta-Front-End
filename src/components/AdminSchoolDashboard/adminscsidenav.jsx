@@ -63,7 +63,7 @@ const PrtSideNav = () => {
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
-                  to="/stddashboardgrades"
+                  to="/adminscdashboardteacher"
                 >
                   <i className="fas fa-chalkboard-teacher sidenav__list__item__icon"></i>
                   Teachers

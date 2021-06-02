@@ -18,6 +18,8 @@ const AdminDashboard = () => {
             <div className="col-lg-9 dashboard__content">
               <AdminHeader></AdminHeader>
               <School></School>
+              <School></School>
+              <School></School>
             </div>
           </div>
         </div>

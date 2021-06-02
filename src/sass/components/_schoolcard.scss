@@ -1,25 +1,28 @@
 .school {
+    display: inline-block;
   &__card {
+    box-sizing: border-box;
+    box-shadow: 5px 5px 7px #eaeaea;
+    &:hover {
+      transform: scale(1.1);
+      transition: 300ms linear all;
+    }
     border-radius: 10px;
-    padding-top: 1.5rem;
     margin: 1.5rem 0rem;
     background-color: $colfontsecondary;
     text-align: center;
     &__img {
-      border: 2px solid $colsecondarybtn;
-      border-radius: 540px;
-      width: 100px;
-      height: 100px;
       margin: auto;
       display: grid;
       align-items: center;
       justify-content: center;
     }
-    // &__image {
-    // }
+    &__image {
+      height: 150px;
+    }
     &__title {
-        margin-top: 1.5rem;
       padding: 1rem;
+      margin: 0px;
       color: $colfontsecondary;
       background-color: $colmainbtn;
       border-radius: 0px 0px 10px 10px;

@@ -40,6 +40,7 @@ import AdminScDashboardCourses from "./AdminSchoolDashboard/Course/adminscdashbo
 import AdminScDashboardCoursesByGrade from "./AdminSchoolDashboard/Course/adminscdashboardcoursesbygrade";
 import AdminScDashboardCourseCreate from "./AdminSchoolDashboard/Course/adminscdashboardcoursecreate";
 import AdminScDashboardTeachers from "./AdminSchoolDashboard/Teacher/admindashboardteachers";
+import AdminScDashboardTeacherCreate from "./AdminSchoolDashboard/Teacher/adminscdashboardteachercreate";
 
 // st-ins
 import DashboardCourses from "./Shared/Course/dashboardcourses"
@@ -78,7 +79,6 @@ const App = () => {
 
             {/* admin school */}
             <Route path="/adminscdashboard" component={AdminScDashboard} />
-            {/* <Route path="/adminscdashboardcourse" component={AdminScDashboardCourses} /> */}
 
             {/* home */}
             <Route path="/notfound" component={NotFound} />
@@ -101,6 +101,8 @@ const App = () => {
             <Route path="/adminscdashboardcourse" component={AdminScDashboardCourses} />
             <Redirect from="/adminscdashboardcourse" exact to="/adminscdashboardcourse" />
 
+            <Route path="/adminscdashboardteacher/create" component={AdminScDashboardTeacherCreate} />
+            <Redirect from="/adminscdashboardteacher/create" exact to="/adminscdashboardteacher/create" />
             <Route path="/adminscdashboardteacher" component={AdminScDashboardTeachers} />
             <Redirect from="/adminscdashboardteacher" exact to="/adminscdashboardteacher" />
 

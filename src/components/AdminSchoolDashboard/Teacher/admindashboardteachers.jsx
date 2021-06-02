@@ -30,7 +30,7 @@ const AdminScDashboardTeachers = () => {
     const history = useHistory();
     //   addLectureHandler
     const addTeacherHandler = (id) => {
-      history.push(`/adminscdashboardteacher/${id}/create/`);
+      history.push(`/adminscdashboardteacher/create`);
     };
 
   return (

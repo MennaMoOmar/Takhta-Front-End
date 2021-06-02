@@ -50,6 +50,7 @@ import AdminScDashboardParentCreate from "./AdminSchoolDashboard/Parent/adminscd
 import AdminDashboard from "./AdminDashboard/admindashboard";
 import AdminDashboardSchool from "./AdminDashboard/School/admindashboardschool";
 import AdminDashboardSchoolCreate from "./AdminDashboard/School/adminscdashboardschoolcreate";
+import AdminDashboardSchoolEdit from "./AdminDashboard/School/admindashboardschooledit";
 
 // st-ins
 import DashboardCourses from "./Shared/Course/dashboardcourses"
@@ -128,8 +129,8 @@ const App = () => {
             <Route path="/adminscdashboardparent" component={AdminScDashboardParents} />
             <Redirect from="/adminscdashboardparent" exact to="/adminscdashboardparent" />
 
-            {/* <Route path="/admindashboardschool/:id" component={AdminDashboardSchool} />
-            <Redirect from="/admindashboardschool/:id" exact to="/admindashboardschool/:id" /> */}
+            <Route path="/admindashboardschool/create/:id" component={AdminDashboardSchoolEdit} />
+            <Redirect from="/admindashboardschool/create/:id" exact to="/admindashboardschool/create/:id" />
             <Route path="/admindashboardschool/create" component={AdminDashboardSchoolCreate} />
             <Redirect from="/admindashboardschool/create" exact to="/admindashboardschool/crete" />
             <Route path="/admindashboardschool" component={AdminDashboardSchool} />

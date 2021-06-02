@@ -6,7 +6,7 @@ const School = () => {
   const history = useHistory();
 
   const handleChooseSchool = (id) => {
-    history.push(`/admindashboardschool/${id}`);
+    history.push(`/admindashboardschool/create/${id}`);
   };
 
   return (

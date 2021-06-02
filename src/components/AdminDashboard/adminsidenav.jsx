@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { NavLink } from "react-router-dom";
 
-const AdminscSideNav = () => {
+const PrtSideNav = () => {
   /*start collapse navbar*/
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
@@ -97,4 +97,4 @@ const AdminscSideNav = () => {
   );
 };
 
-export default AdminscSideNav;
+export default PrtSideNav;

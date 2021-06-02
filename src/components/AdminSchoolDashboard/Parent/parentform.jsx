@@ -80,6 +80,33 @@ const ParentForm = () => {
               placeholder="confirm passowrd"
             />
           </div>
+          <div className="form-group">
+            <label for="techcourses" className="adminform__label">
+              Student Grade
+            </label>
+            <select
+              class="form-control"
+              id="techcourses"
+              className="adminform__input"
+            >
+              <option>Grade 1</option>
+              <option>Grade 2</option>
+              <option>Grade 3</option>
+            </select>
+          </div>
+          <div className="form-group"> 
+            <label for="techcourses" className="adminform__label">
+              Student Name
+            </label>
+            <select
+              class="form-control"
+              id="techcourses"
+              className="adminform__input"
+            >
+              <option>Menna Omar</option>
+              <option>Malak Omar</option>
+            </select>
+          </div>
           <button
             className="button  adminform__addbtn"
             onClick={() => addParentHandler(1)}

@@ -1,9 +1,11 @@
 import React from "react";
 
 import StdNavBar from "../Shared/stdnavbar";
-import AdminScSideNav from "./adminscsidenav";
+import AdminScSideNav from "./adminsidenav";
+import AdminHeader from "./adminheader";
+import School from "./School/school";
 
-const PrtDashboard = () => {
+const AdminDashboard = () => {
   return (
     <React.Fragment>
       <div style={{ backgroundColor: "#F6FCFB" }}>
@@ -14,7 +16,8 @@ const PrtDashboard = () => {
               <AdminScSideNav></AdminScSideNav>
             </div>
             <div className="col-lg-9 dashboard__content">
-              {/* <PrtHeader></PrtHeader> */}
+              <AdminHeader></AdminHeader>
+              <School></School>
             </div>
           </div>
         </div>
@@ -23,4 +26,4 @@ const PrtDashboard = () => {
   );
 };
 
-export default PrtDashboard;
+export default AdminDashboard;

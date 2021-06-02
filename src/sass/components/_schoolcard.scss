@@ -1,0 +1,28 @@
+.school {
+  &__card {
+    border-radius: 10px;
+    padding-top: 1.5rem;
+    margin: 1.5rem 0rem;
+    background-color: $colfontsecondary;
+    text-align: center;
+    &__img {
+      border: 2px solid $colsecondarybtn;
+      border-radius: 540px;
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+    // &__image {
+    // }
+    &__title {
+        margin-top: 1.5rem;
+      padding: 1rem;
+      color: $colfontsecondary;
+      background-color: $colmainbtn;
+      border-radius: 0px 0px 10px 10px;
+    }
+  }
+}

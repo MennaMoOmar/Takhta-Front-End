@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { NavLink } from "react-router-dom";
 
-const PrtSideNav = () => {
+const AdminSideNav = () => {
   /*start collapse navbar*/
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
@@ -33,7 +33,7 @@ const PrtSideNav = () => {
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
-                  to="/adminscdashboard"
+                  to="/admindashboard"
                 >
                   <i className="fas fa-binoculars sidenav__list__item__icon"></i>
                   Overview
@@ -43,50 +43,10 @@ const PrtSideNav = () => {
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
-                  to="/adminscdashboardcourse"
+                  to="/adminscdashboardaschool"
                 >
-                  <i className="fas fa-book sidenav__list__item__icon"></i>
-                  Courses
-                </NavLink>
-              </li>
-              <li className="sidenav__list__item">
-                <NavLink
-                  className="sidenav__list__item__a"
-                  activeClassName="sidenav--is-active"
-                  to="/stddashboardschedule"
-                >
-                  <i className="far fa-calendar-alt sidenav__list__item__icon"></i>
-                  Schedule
-                </NavLink>
-              </li>
-              <li className="sidenav__list__item">
-                <NavLink
-                  className="sidenav__list__item__a"
-                  activeClassName="sidenav--is-active"
-                  to="/adminscdashboardteacher"
-                >
-                  <i className="fas fa-chalkboard-teacher sidenav__list__item__icon"></i>
-                  Teachers
-                </NavLink>
-              </li>
-              <li className="sidenav__list__item">
-                <NavLink
-                  className="sidenav__list__item__a"
-                  activeClassName="sidenav--is-active"
-                  to="/adminscdashboardstudent"
-                >
-                  <i className="fas fa-user-graduate sidenav__list__item__icon"></i>
-                  Students
-                </NavLink>
-              </li>
-              <li className="sidenav__list__item">
-                <NavLink
-                  className="sidenav__list__item__a"
-                  activeClassName="sidenav--is-active"
-                  to="/adminscdashboardparent"
-                >
-                  <i className="fas fa-user-tie sidenav__list__item__icon"></i>
-                  Parents
+                  <i className="fas fa-school sidenav__list__item__icon"></i>
+                  School
                 </NavLink>
               </li>
             </ul>
@@ -97,4 +57,4 @@ const PrtSideNav = () => {
   );
 };
 
-export default PrtSideNav;
+export default AdminSideNav;

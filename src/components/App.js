@@ -46,6 +46,9 @@ import AdminScDashboardStudentCreate from "./AdminSchoolDashboard/Student/admins
 import AdminScDashboardParents from "./AdminSchoolDashboard/Parent/admindashboardparents";
 import AdminScDashboardParentCreate from "./AdminSchoolDashboard/Parent/adminscdashboardparentcreate";
 
+// admin
+import AdminDashboard from "./AdminDashboard/admindashboard";
+
 // st-ins
 import DashboardCourses from "./Shared/Course/dashboardcourses"
 import DashboardLectures from "./Shared/Lectures/dashboardlectures";
@@ -83,6 +86,9 @@ const App = () => {
 
             {/* admin school */}
             <Route path="/adminscdashboard" component={AdminScDashboard} />
+
+            {/* admin */}
+            <Route path="/admindashboard" component={AdminDashboard} />
 
             {/* home */}
             <Route path="/notfound" component={NotFound} />

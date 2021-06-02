@@ -43,7 +43,7 @@ const AdminSideNav = () => {
                 <NavLink
                   className="sidenav__list__item__a"
                   activeClassName="sidenav--is-active"
-                  to="/adminscdashboardaschool"
+                  to="/admindashboardschool"
                 >
                   <i className="fas fa-school sidenav__list__item__icon"></i>
                   School

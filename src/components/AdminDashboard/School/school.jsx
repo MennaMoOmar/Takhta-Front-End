@@ -14,7 +14,7 @@ const School = () => {
       <div className="col-md-4 col-sm-6 school">
         <div className="school__card" onClick={() => handleChooseSchool(1)}>
           <div className="school__card__img">
-            <img src="./images/logo.png" alt="" className="school__card__image"/>
+            <img src="./images/school.png" alt="" className="school__card__image"/>
           </div>
           <h4 className="school__card__title">ITI</h4>
         </div>

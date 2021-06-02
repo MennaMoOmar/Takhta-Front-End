@@ -1,10 +1,11 @@
 import React from "react";
 import { useHistory } from "react-router";
 
+
 import StdNavBar from "../../Shared/stdnavbar";
 import AdminScSideNav from "../adminscsidenav";
-import AdminScCoursesHeader from "./adminssccourseheader";
-import Course from "./coursecard";
+import AdminScStudentHeader from "./adminsscstudentheader";
+import StudentTable from "./studentstable";
 
 // add btn
 import { makeStyles } from "@material-ui/core/styles";
@@ -22,15 +23,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const AdminScDashboardCoursesByGrade = () => {
+const AdminScDashboardStudents = () => {
   const classes = useStyles();
 
-  /* history */
-  const history = useHistory();
-  //   addLectureHandler
-  const addCourseHandler = (id) => {
-    history.push(`/adminscdashboardcourse/${id}/create/`);
-  };
+    /* history */
+    const history = useHistory();
+    //   addLectureHandler
+    const addStudentHandler = (id) => {
+      history.push(`/adminscdashboardstudent/create`);
+    };
 
   return (
     <React.Fragment>
@@ -42,22 +43,17 @@ const AdminScDashboardCoursesByGrade = () => {
               <AdminScSideNav></AdminScSideNav>
             </div>
             <div className="col-lg-9 dashboard__content">
-              <AdminScCoursesHeader></AdminScCoursesHeader>
-              <section className="stdcourses">
-                <div className="row  justify-content-md-center">
-                  <Course></Course>
-                  <Course></Course>
+              <AdminScStudentHeader></AdminScStudentHeader>
+                <StudentTable></StudentTable>
+                <div className={classes.root}>
+                  <Fab
+                    className="lectures__add"
+                    aria-label="add"
+                    onClick={() => addStudentHandler(1)}
+                  >
+                    <AddIcon />
+                  </Fab>
                 </div>
-              </section>
-              <div className={classes.root}>
-                <Fab
-                  className="lectures__add"
-                  aria-label="add"
-                  onClick={() => addCourseHandler(1)}
-                >
-                  <AddIcon />
-                </Fab>
-              </div>
             </div>
           </div>
         </div>
@@ -66,4 +62,4 @@ const AdminScDashboardCoursesByGrade = () => {
   );
 };
 
-export default AdminScDashboardCoursesByGrade;
+export default AdminScDashboardStudents;

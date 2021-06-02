@@ -38,6 +38,13 @@ import PrtDashboard from "./ParentDashboard/prtdashboard";
 import AdminScDashboard from "./AdminSchoolDashboard/adminscdashboard";
 import AdminScDashboardCourses from "./AdminSchoolDashboard/Course/adminscdashboardcourses";
 import AdminScDashboardCoursesByGrade from "./AdminSchoolDashboard/Course/adminscdashboardcoursesbygrade";
+import AdminScDashboardCourseCreate from "./AdminSchoolDashboard/Course/adminscdashboardcoursecreate";
+import AdminScDashboardTeachers from "./AdminSchoolDashboard/Teacher/admindashboardteachers";
+import AdminScDashboardTeacherCreate from "./AdminSchoolDashboard/Teacher/adminscdashboardteachercreate";
+import AdminScDashboardStudents from "./AdminSchoolDashboard/Student/admindashboardstudents";
+import AdminScDashboardStudentCreate from "./AdminSchoolDashboard/Student/adminscdashboardstudentcreate";
+import AdminScDashboardParents from "./AdminSchoolDashboard/Parent/admindashboardparents";
+import AdminScDashboardParentCreate from "./AdminSchoolDashboard/Parent/adminscdashboardparentcreate";
 
 // st-ins
 import DashboardCourses from "./Shared/Course/dashboardcourses"
@@ -76,7 +83,6 @@ const App = () => {
 
             {/* admin school */}
             <Route path="/adminscdashboard" component={AdminScDashboard} />
-            <Route path="/adminscdashboardcourse" component={AdminScDashboardCourses} />
 
             {/* home */}
             <Route path="/notfound" component={NotFound} />
@@ -92,8 +98,27 @@ const App = () => {
             <Redirect from="/insdashboardassignmentslist/:id" exact to="/insdashboardassignmentslist/:id" />
             <Route path="/insdashboardstudents/:id" component={InsdashDoardStudents} />
             <Redirect from="/insdashboardstudents/:id" exact to="/insdashboardstudents/:id" />
-            <Route path="/adminscdashboardcoursesbygrade/:id" component={AdminScDashboardCoursesByGrade} />
-            <Redirect from="/adminscdashboardcoursesbygrade/:id" exact to="/adminscdashboardcoursesbygrade/:id" />
+            <Route path="/adminscdashboardcourse/:id/create" component={AdminScDashboardCourseCreate} />
+            <Redirect from="/adminscdashboardcourse/:id/create" exact to="/adminscdashboardcourse/:id/create" />
+            <Route path="/adminscdashboardcourse/:id" component={AdminScDashboardCoursesByGrade} />
+            <Redirect from="/adminscdashboardcourse/:id" exact to="/adminscdashboardcourse/:id" />
+            <Route path="/adminscdashboardcourse" component={AdminScDashboardCourses} />
+            <Redirect from="/adminscdashboardcourse" exact to="/adminscdashboardcourse" />
+
+            <Route path="/adminscdashboardteacher/create" component={AdminScDashboardTeacherCreate} />
+            <Redirect from="/adminscdashboardteacher/create" exact to="/adminscdashboardteacher/create" />
+            <Route path="/adminscdashboardteacher" component={AdminScDashboardTeachers} />
+            <Redirect from="/adminscdashboardteacher" exact to="/adminscdashboardteacher" />
+
+            <Route path="/adminscdashboardstudent/create" component={AdminScDashboardStudentCreate} />
+            <Redirect from="/adminscdashboardstudent/create" exact to="/adminscdashboardteacher/create" />
+            <Route path="/adminscdashboardstudent" component={AdminScDashboardStudents} />
+            <Redirect from="/adminscdashboardstudent" exact to="/adminscdashboardstudent" />
+
+            <Route path="/adminscdashboardparent/create" component={AdminScDashboardParentCreate} />
+            <Redirect from="/adminscdashboardparent/create" exact to="/adminscdashboardparent/create" />
+            <Route path="/adminscdashboardparent" component={AdminScDashboardParents} />
+            <Redirect from="/adminscdashboardparent" exact to="/adminscdashboardparent" />
 
             <Redirect to="/notfound" />
         </Switch>

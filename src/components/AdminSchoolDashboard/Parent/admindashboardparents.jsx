@@ -3,8 +3,8 @@ import { useHistory } from "react-router";
 
 import StdNavBar from "../../Shared/stdnavbar";
 import AdminScSideNav from "../adminscsidenav";
-import AdminScCoursesHeader from "./adminssccourseheader";
-import Course from "./coursecard";
+import AdminScParentHeader from "./adminsscparentheader";
+import ParentTable from "./parentsstable";
 
 // add btn
 import { makeStyles } from "@material-ui/core/styles";
@@ -22,14 +22,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const AdminScDashboardCoursesByGrade = () => {
+const AdminScDashboardParents = () => {
   const classes = useStyles();
 
   /* history */
   const history = useHistory();
   //   addLectureHandler
-  const addCourseHandler = (id) => {
-    history.push(`/adminscdashboardcourse/${id}/create/`);
+  const addParentHandler = (id) => {
+    history.push(`/adminscdashboardparent/create`);
   };
 
   return (
@@ -42,18 +42,13 @@ const AdminScDashboardCoursesByGrade = () => {
               <AdminScSideNav></AdminScSideNav>
             </div>
             <div className="col-lg-9 dashboard__content">
-              <AdminScCoursesHeader></AdminScCoursesHeader>
-              <section className="stdcourses">
-                <div className="row  justify-content-md-center">
-                  <Course></Course>
-                  <Course></Course>
-                </div>
-              </section>
+              <AdminScParentHeader></AdminScParentHeader>
+              <ParentTable></ParentTable>
               <div className={classes.root}>
                 <Fab
                   className="lectures__add"
                   aria-label="add"
-                  onClick={() => addCourseHandler(1)}
+                  onClick={() => addParentHandler(1)}
                 >
                   <AddIcon />
                 </Fab>
@@ -66,4 +61,4 @@ const AdminScDashboardCoursesByGrade = () => {
   );
 };
 
-export default AdminScDashboardCoursesByGrade;
+export default AdminScDashboardParents;

@@ -1,0 +1,44 @@
+.adminform{
+    margin: 1rem;
+    &__header{
+        color: $colsecondarybtn;
+        width: fit-content;
+        border-bottom: 2px solid $colsecondarybtn;
+        padding-bottom: .5rem;
+        margin-bottom: 2rem;
+    }
+    &__label{
+        color: $colmainbtn;
+        font-size: 1.2rem;
+    }
+    &__input{
+        width: 50% !important;
+        display: block;
+        padding: .3rem;
+        border-radius: 20px;
+        border: 1px solid $colmainbtn;
+        outline: none;
+        text-indent: .5rem;
+    }
+    &__addbtn {
+        background-color: $colmainbtn;
+        color: $colfontsecondary;
+        margin-right: 0.5rem;
+        border-radius: 20px;
+        min-width: 70px;
+        &:hover {
+          background-color: $colmain;
+          color: $colfontsecondary;
+        }
+      }
+      &__cancelbtn {
+        background-color: $colsecondarybtn;
+        color: $colfontsecondary;
+        border-radius: 20px;
+        min-width: 70px;
+        &:hover {
+          background-color: $colsecondary;
+          color: $colfontsecondary;
+        }
+    }
+}

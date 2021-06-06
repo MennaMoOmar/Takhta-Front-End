@@ -1,0 +1,21 @@
+.error{
+    text-align: center;
+    padding: 2rem 0rem;
+    &__img{
+        width: 50%;
+    }
+    &__button{
+        padding: 5rem;
+    }
+    &__btn{
+        background-color: $colsecondarybtn !important;
+        border-radius: 20px !important;
+        &:hover{
+            background-color: $colsecondary !important;
+            cursor: pointer;
+        }
+    }
+    &__link{
+        color: $colfontsecondary;
+    }
+}

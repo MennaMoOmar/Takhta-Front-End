@@ -71,10 +71,10 @@ const StdNavBar = () => {
           <a className="navbar-brand" href="/">
             <img
               className="navBar__image"
-              src="/images/logo.png"
+              src="/images/logo2.png"
               alt="logo"
             ></img>
-            <span className="stdnavBar__span">Takhta</span>
+            {/* <span className="stdnavBar__span">Takhta</span> */}
           </a>
           <button
             className="custom-toggler navbar-toggler"

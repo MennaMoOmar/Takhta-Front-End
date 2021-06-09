@@ -6,6 +6,7 @@ import Services from "./services"
 import About from "./about"
 import ParentFeedback from "./parentfeedback"
 import Feedback from "./feedback"
+import Footer from "./footer"
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <About></About>
         <ParentFeedback></ParentFeedback>
         <Feedback></Feedback>
+        <Footer></Footer>
       </div>
     </React.Fragment>
   );

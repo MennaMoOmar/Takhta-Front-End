@@ -1,0 +1,36 @@
+.footer {
+  background-image: url("../images/footer2.png"), url("../images/footer.png");
+  background-position: top, top;
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  margin-top: 5rem;
+  padding-top: 15rem;
+  padding-bottom: 0rem;
+  .col-lg-4{
+      text-align: center;
+  }
+  &__image {
+    width: 200px;
+  }
+  &__list{
+      &__item{
+          margin-bottom: .5rem;
+          color: $colfontmain;
+      }
+  }
+  &__icon{
+      margin: .5rem;
+      font-size: 1.2rem;
+  }
+  &__cpy{
+      text-align: center;
+      .col-lg-12{
+          margin: 0rem;
+      }
+      p{
+          margin: 0rem;
+          padding-top: 2rem;
+          color: gray;
+      }
+  }
+}

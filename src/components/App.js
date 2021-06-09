@@ -9,6 +9,9 @@ import Home from "./Home/home"
 import Login  from "./login"
 import HeroSection  from "./Home/herosection"
 import Services  from "./Home/services"
+import About  from "./Home/about"
+import Feedback  from "./Home/feedback"
+import ParentFeedback  from "./Home/parentfeedback"
 import StdDashboard from "./StudentDashboard/stddashboard"
 import NotFound from "./notfound"
 import Totop from "./totop"
@@ -64,6 +67,9 @@ const App = () => {
             <Route path="/login" component={Login} />
             <Route path="/herosection" component={HeroSection} />
             <Route path="/services" component={Services} />
+            <Route path="/about" component={About} />
+            <Route path="/feedback" component={Feedback} />
+            <Route path="/parentfeedback" component={ParentFeedback} />
 
             {/* student */}
             <Route path="/stddashboard" component={StdDashboard} />

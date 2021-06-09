@@ -1,0 +1,33 @@
+.parentfeedback {
+  &__heading {
+    display: grid;
+    justify-content: center;
+    margin: 2rem 0rem;
+    h2 {
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid $colsecondarybtn;
+    }
+  }
+  &__content {
+    text-align: -webkit-center;
+    &__card {
+      width: 60%;
+      background-color: $colfontsecondary;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px gray;
+      padding: 2rem;
+      justify-content: center;
+      align-items: center;
+      display: grid;
+      box-sizing: border-box;
+      box-shadow: 5px 5px 7px #eaeaea;
+      margin: 1rem;
+      &__img{
+          margin: 1rem 0rem;
+      }
+      &__parent{
+          color: gray;
+      }
+    }
+  }
+}

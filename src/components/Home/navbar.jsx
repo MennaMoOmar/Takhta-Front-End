@@ -73,17 +73,17 @@ const Navbar = (props) => {
               <li className="navBar__list__item nav-item">
                 <NavLink
                   className="navBar__list__item__link nav-link"
-                  to="/contactUs"
+                  to="/parentfeedback"
                 >
-                  Contact Us
+                  Feedback
                 </NavLink>
               </li>
               <li className="navBar__list__item nav-item">
                 <NavLink
                   className="navBar__list__item__link nav-link"
-                  to="/ourteam"
+                  to="/feedback"
                 >
-                  Our Team
+                  Contact Us
                 </NavLink>
               </li>
             </ul>

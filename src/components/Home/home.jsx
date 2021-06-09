@@ -4,6 +4,8 @@ import NavBar from "./navbar"
 import HeroSection from "./herosection"
 import Services from "./services"
 import About from "./about"
+import ParentFeedback from "./parentfeedback"
+import Feedback from "./feedback"
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
         <HeroSection></HeroSection>
         <Services></Services>
         <About></About>
+        <ParentFeedback></ParentFeedback>
+        <Feedback></Feedback>
       </div>
     </React.Fragment>
   );
